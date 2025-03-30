@@ -1,0 +1,315 @@
+Using pre-set license
+Built from '6000.0/staging' branch; Version is '6000.0.42f1 (feb9a7235030) revision 16693671'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 32555 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\6000.0.42f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+D:/Phantom-Pixel/Phantom Pixel
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+52944
+-job-worker-count
+9
+-background-job-worker-count
+8
+-gc-helper-count
+1
+Successfully changed project path to: D:/Phantom-Pixel/Phantom Pixel
+D:/Phantom-Pixel/Phantom Pixel
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [32452]  Target information:
+
+Player connection [32452]  * "[IP] 172.20.16.186 [Port] 0 [Flags] 2 [Guid] 941592151 [EditorId] 941592151 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-8KTVPCA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [32452] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [32452] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 9
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 2.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.42f1 (feb9a7235030)
+[Subsystems] Discovering subsystems at path D:/6000.0.42f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Phantom-Pixel/Phantom Pixel/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4070 (ID=0x2786)
+    Vendor:   NVIDIA
+    VRAM:     12012 MB
+    Driver:   32.0.15.7283
+Initialize mono
+Mono path[0] = 'D:/6000.0.42f1/Editor/Data/Managed'
+Mono path[1] = 'D:/6000.0.42f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/6000.0.42f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56132
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/6000.0.42f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002835 seconds.
+- Loaded All Assemblies, in  0.517 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.422 seconds
+Domain Reload Profiling: 938ms
+	BeginReloadAssembly (200ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (58ms)
+	LoadAllAssembliesAndSetupDomain (194ms)
+		LoadAssemblies (199ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (190ms)
+			TypeCache.Refresh (188ms)
+				TypeCache.ScanAssembly (172ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (422ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (357ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (31ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (68ms)
+			ProcessInitializeOnLoadAttributes (179ms)
+			ProcessInitializeOnLoadMethodAttributes (74ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.930 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 1.48 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.873 seconds
+Domain Reload Profiling: 1802ms
+	BeginReloadAssembly (211ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (611ms)
+		LoadAssemblies (424ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (319ms)
+			TypeCache.Refresh (229ms)
+				TypeCache.ScanAssembly (209ms)
+			BuildScriptInfoCaches (70ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (873ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (663ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (123ms)
+			ProcessInitializeOnLoadAttributes (429ms)
+			ProcessInitializeOnLoadMethodAttributes (102ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 1.43 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 214 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6327 unused Assets / (4.7 MB). Loaded Objects now: 7030.
+Memory consumption went from 179.3 MB to 174.6 MB.
+Total: 12.260800 ms (FindLiveObjects: 0.821100 ms CreateObjectMapping: 0.479600 ms MarkObjects: 8.706000 ms  DeleteObjects: 2.252500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 22788.478877 seconds.
+  path: Assets/Jenna's Assets/wire_corner.fbx
+  artifactKey: Guid(d6c39f58a570ade47926eabfe50e3065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Jenna's Assets/wire_corner.fbx using Guid(d6c39f58a570ade47926eabfe50e3065) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9703b796a79a3621724a311683f85080') in 0.6539609 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.997384 seconds.
+  path: Assets/Jenna's Assets/wire_end.mat
+  artifactKey: Guid(10b622975d62b5541aafaeafcaa72f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Jenna's Assets/wire_end.mat using Guid(10b622975d62b5541aafaeafcaa72f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ffe544e7da903e43b8f5164ee778da31') in 0.0361035 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.074516 seconds.
+  path: Assets/Jenna's Assets/WE_texture
+  artifactKey: Guid(3dfcc0f7829ed054f8b6c42d7f81ed88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Jenna's Assets/WE_texture using Guid(3dfcc0f7829ed054f8b6c42d7f81ed88) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8fb535b462e3b406ac5b29408b2e0962') in 0.0005787 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011268 seconds.
+  path: Assets/Jenna's Assets/WE_texture/wire_end_wire_end_BaseMap_sRGB.png
+  artifactKey: Guid(e7e3be8a1d3fe3a41b677a1cfada729a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Jenna's Assets/WE_texture/wire_end_wire_end_BaseMap_sRGB.png using Guid(e7e3be8a1d3fe3a41b677a1cfada729a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8179fd41066a6c4ee4708474608542cd') in 0.0284245 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.775930 seconds.
+  path: Assets/Jenna's Assets/WE_texture/wire_end_wire_end_Normal_Raw.png
+  artifactKey: Guid(dd01cb2524e232a459d84b8c55f1d52c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Jenna's Assets/WE_texture/wire_end_wire_end_Normal_Raw.png using Guid(dd01cb2524e232a459d84b8c55f1d52c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b5610105ab6d8c70a8f033943f3bdd0b') in 0.0214939 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.638128 seconds.
+  path: Assets/Jenna's Assets/Materials/wire_end.mat
+  artifactKey: Guid(10b622975d62b5541aafaeafcaa72f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Jenna's Assets/Materials/wire_end.mat using Guid(10b622975d62b5541aafaeafcaa72f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bbf0addea8507553c96bd0c1b16a0e54') in 0.0301985 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.460221 seconds.
+  path: Assets/Jenna's Assets/wire_end.fbx
+  artifactKey: Guid(a036c9c6a3b718f449789f891a3dd443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Jenna's Assets/wire_end.fbx using Guid(a036c9c6a3b718f449789f891a3dd443) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '964b7f8f428f9bd0cee8e2d5deffa1fe') in 0.0321816 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.310645 seconds.
+  path: Assets/Jenna's Assets/wire_middle.mat
+  artifactKey: Guid(78cd0051594856f4fba237c360f2ee44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Jenna's Assets/wire_middle.mat using Guid(78cd0051594856f4fba237c360f2ee44) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '747ffd5f3a8ad7fbe337f92c4d3b4d15') in 0.0199027 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.644162 seconds.
+  path: Assets/Jenna's Assets/WM_texture
+  artifactKey: Guid(a895bde120e164f4487c33231c44f8e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Jenna's Assets/WM_texture using Guid(a895bde120e164f4487c33231c44f8e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3921ab65188d7a29845bea711ca9c662') in 0.0006879 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035351 seconds.
+  path: Assets/Jenna's Assets/WM_texture/wire_middle_wire_middle_BaseMap_sRGB.png
+  artifactKey: Guid(2a31c444c245910488464cb72aa86f76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Jenna's Assets/WM_texture/wire_middle_wire_middle_BaseMap_sRGB.png using Guid(2a31c444c245910488464cb72aa86f76) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0347c74b9fde7bbe31b4d7d021231d57') in 0.0162742 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Jenna's Assets/WM_texture/wire_middle_wire_middle_Normal_Raw.png
+  artifactKey: Guid(4476601a103bde848a5f118216256c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Jenna's Assets/WM_texture/wire_middle_wire_middle_Normal_Raw.png using Guid(4476601a103bde848a5f118216256c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0cb1e3f32f08e1178be6ab92e0844dd8') in 0.0133652 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.249461 seconds.
+  path: Assets/Jenna's Assets/WM_texture/wire_middle_wire_middle_Normal_Raw.png
+  artifactKey: Guid(4476601a103bde848a5f118216256c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Jenna's Assets/WM_texture/wire_middle_wire_middle_Normal_Raw.png using Guid(4476601a103bde848a5f118216256c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c196146eeaa06b5782cdb95e71dc042d') in 0.0177915 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.382951 seconds.
+  path: Assets/Jenna's Assets/Materials/wire_middle.mat
+  artifactKey: Guid(78cd0051594856f4fba237c360f2ee44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Jenna's Assets/Materials/wire_middle.mat using Guid(78cd0051594856f4fba237c360f2ee44) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '59ef41597c419d91ad95b11372ef70c4') in 0.0207647 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.462430 seconds.
+  path: Assets/Jenna's Assets/wire_middle.fbx
+  artifactKey: Guid(d38885899d904ad49946e5dbf7330f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Jenna's Assets/wire_middle.fbx using Guid(d38885899d904ad49946e5dbf7330f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9bb5811e64a490c50e95aa462a5a8eaf') in 0.0252269 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.574935 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(9fd9b6356d30138449652c95690dad33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(9fd9b6356d30138449652c95690dad33) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '83c66cad54262339cb05256949a635f4') in 0.0006049 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
