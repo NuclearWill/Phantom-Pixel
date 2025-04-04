@@ -21,14 +21,12 @@ public class PauseMenu : MonoBehaviour
     private void PauseTime()
     {
         pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
         TimePaused = true;
     }
 
     private void ResumeTime()
     {
         pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
         TimePaused = false;
     }
 }
