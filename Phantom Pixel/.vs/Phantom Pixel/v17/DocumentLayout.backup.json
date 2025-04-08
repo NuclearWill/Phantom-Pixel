@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "D:\\Self Made Games\\Unity Games\\Phantom Pixel\\Phantom-Pixel\\Phantom Pixel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A09BF5FC-59E5-5E38-3B53-75EFE8E46AF8}|Assembly-CSharp.csproj|D:\\Self Made Games\\Unity Games\\Phantom Pixel\\Phantom-Pixel\\Phantom Pixel\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A09BF5FC-59E5-5E38-3B53-75EFE8E46AF8}|Assembly-CSharp.csproj|d:\\self made games\\unity games\\phantom pixel\\phantom-pixel\\phantom pixel\\assets\\scripts\\interactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A09BF5FC-59E5-5E38-3B53-75EFE8E46AF8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A09BF5FC-59E5-5E38-3B53-75EFE8E46AF8}|Assembly-CSharp.csproj|d:\\self made games\\unity games\\phantom pixel\\phantom-pixel\\phantom pixel\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A09BF5FC-59E5-5E38-3B53-75EFE8E46AF8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A09BF5FC-59E5-5E38-3B53-75EFE8E46AF8}|Assembly-CSharp.csproj|d:\\self made games\\unity games\\phantom pixel\\phantom-pixel\\phantom pixel\\assets\\scripts\\inputsystem_actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A09BF5FC-59E5-5E38-3B53-75EFE8E46AF8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inputsystem_actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A09BF5FC-59E5-5E38-3B53-75EFE8E46AF8}|Assembly-CSharp.csproj|d:\\self made games\\unity games\\phantom pixel\\phantom-pixel\\phantom pixel\\assets\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A09BF5FC-59E5-5E38-3B53-75EFE8E46AF8}|Assembly-CSharp.csproj|D:\\Self Made Games\\Unity Games\\Phantom Pixel\\Phantom-Pixel\\Phantom Pixel\\assets\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A09BF5FC-59E5-5E38-3B53-75EFE8E46AF8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -29,6 +29,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A09BF5FC-59E5-5E38-3B53-75EFE8E46AF8}|Assembly-CSharp.csproj|D:\\Self Made Games\\Unity Games\\Phantom Pixel\\Phantom-Pixel\\Phantom Pixel\\assets\\scripts\\launch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A09BF5FC-59E5-5E38-3B53-75EFE8E46AF8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\launch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|d:\\self made games\\unity games\\phantom pixel\\phantom-pixel\\phantom pixel\\assets\\scripts\\inputsystem_actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\inputsystem_actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +42,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Interactor.cs",
+              "DocumentMoniker": "D:\\Self Made Games\\Unity Games\\Phantom Pixel\\Phantom-Pixel\\Phantom Pixel\\Assets\\Scripts\\Interactor.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Interactor.cs",
+              "ToolTip": "D:\\Self Made Games\\Unity Games\\Phantom Pixel\\Phantom-Pixel\\Phantom Pixel\\Assets\\Scripts\\Interactor.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Interactor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T22:41:29.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "InputSystem_Actions.cs",
               "DocumentMoniker": "D:\\Self Made Games\\Unity Games\\Phantom Pixel\\Phantom-Pixel\\Phantom Pixel\\Assets\\Scripts\\InputSystem_Actions.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InputSystem_Actions.cs",
@@ -50,8 +67,7 @@
               "RelativeToolTip": "Assets\\Scripts\\InputSystem_Actions.cs",
               "ViewState": "AgIAAHwGAAAAAAAAAAAqwJUGAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T22:18:18.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T22:18:18.515Z"
             },
             {
               "$type": "Document",
@@ -75,8 +91,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PauseMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T23:17:31.522Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T23:17:31.522Z"
             },
             {
               "$type": "Document",
@@ -116,13 +131,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "D:\\Self Made Games\\Unity Games\\Phantom Pixel\\Phantom-Pixel\\Phantom Pixel\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
               "ToolTip": "D:\\Self Made Games\\Unity Games\\Phantom Pixel\\Phantom-Pixel\\Phantom Pixel\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwE4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAmwFQAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-25T18:02:14.663Z",
               "EditorCaption": ""
