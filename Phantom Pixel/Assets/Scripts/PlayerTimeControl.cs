@@ -24,5 +24,9 @@ public class PlayerTimeControl : MonoBehaviour
                 TimeManager.TogglePause();
             }
         }
+
+        // restart level
+        if (Input.GetKeyDown(KeyCode.R))
+            TimeManager.RestartTime();
     }
 }

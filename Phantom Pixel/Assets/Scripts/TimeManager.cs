@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public static class TimeManager
 {
@@ -60,8 +61,19 @@ public static class TimeManager
         return timePaused;
     }
 
+    public static void RestartTime()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        gameTime = 0f;
+    }
+
     public static float GetGameTime()
     {
         return gameTime;
+    }
+
+    public static void resetGameTime()
+    {
+        gameTime = 0f;
     }
 }
