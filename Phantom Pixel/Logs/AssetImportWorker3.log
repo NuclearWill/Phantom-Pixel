@@ -1,0 +1,279 @@
+Using pre-set license
+Built from '6000.0/staging' branch; Version is '6000.0.42f1 (feb9a7235030) revision 16693671'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 32698 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity Versions\6000.0.42f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+D:/Self Made Games/Unity Games/Phantom Pixel/Phantom-Pixel/Phantom Pixel
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+54355
+-job-worker-count
+5
+-background-job-worker-count
+8
+-gc-helper-count
+1
+Successfully changed project path to: D:/Self Made Games/Unity Games/Phantom Pixel/Phantom-Pixel/Phantom Pixel
+D:/Self Made Games/Unity Games/Phantom Pixel/Phantom-Pixel/Phantom Pixel
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [29704]  Target information:
+
+Player connection [29704]  * "[IP] 11.96.1.62 [Port] 0 [Flags] 2 [Guid] 2989789202 [EditorId] 2989789202 [Version] 1048832 [Id] WindowsEditor(7,MyDesktop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [29704]  * "[IP] 192.168.150.1 [Port] 0 [Flags] 2 [Guid] 2989789202 [EditorId] 2989789202 [Version] 1048832 [Id] WindowsEditor(7,MyDesktop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [29704]  * "[IP] 192.168.159.1 [Port] 0 [Flags] 2 [Guid] 2989789202 [EditorId] 2989789202 [Version] 1048832 [Id] WindowsEditor(7,MyDesktop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [29704] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [29704] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 2.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.42f1 (feb9a7235030)
+[Subsystems] Discovering subsystems at path D:/Unity Versions/6000.0.42f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Self Made Games/Unity Games/Phantom Pixel/Phantom-Pixel/Phantom Pixel/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
+    Vendor:   NVIDIA
+    VRAM:     5954 MB
+    Driver:   32.0.15.6094
+Initialize mono
+Mono path[0] = 'D:/Unity Versions/6000.0.42f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity Versions/6000.0.42f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity Versions/6000.0.42f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56328
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity Versions/6000.0.42f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003981 seconds.
+- Loaded All Assemblies, in  0.527 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.414 seconds
+Domain Reload Profiling: 939ms
+	BeginReloadAssembly (205ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (60ms)
+	LoadAllAssembliesAndSetupDomain (195ms)
+		LoadAssemblies (204ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (190ms)
+			TypeCache.Refresh (189ms)
+				TypeCache.ScanAssembly (174ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (414ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (355ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (30ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (66ms)
+			ProcessInitializeOnLoadAttributes (184ms)
+			ProcessInitializeOnLoadMethodAttributes (69ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.108 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 2.35 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.207 seconds
+Domain Reload Profiling: 2312ms
+	BeginReloadAssembly (272ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (36ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (718ms)
+		LoadAssemblies (544ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (358ms)
+			TypeCache.Refresh (248ms)
+				TypeCache.ScanAssembly (229ms)
+			BuildScriptInfoCaches (81ms)
+			ResolveRequiredComponents (25ms)
+	FinalizeReload (1208ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (976ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (139ms)
+			ProcessInitializeOnLoadAttributes (695ms)
+			ProcessInitializeOnLoadMethodAttributes (128ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 1.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 215 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6489 unused Assets / (7.5 MB). Loaded Objects now: 7156.
+Memory consumption went from 163.0 MB to 155.5 MB.
+Total: 14.765100 ms (FindLiveObjects: 0.920100 ms CreateObjectMapping: 0.605500 ms MarkObjects: 7.682900 ms  DeleteObjects: 5.555100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 930443.565253 seconds.
+  path: Assets/Art/Hunter's Assets/computer/base/computer_standardSurface1_Height_Raw.1001.png
+  artifactKey: Guid(b8b14d56365e4164f8480d24e05654b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/computer/base/computer_standardSurface1_Height_Raw.1001.png using Guid(b8b14d56365e4164f8480d24e05654b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9fddfd20db68eefa3dccb208356de0d7') in 0.103473 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.585624 seconds.
+  path: Assets/Art/Hunter's Assets/Floor hole/Floor hole_initialShadingGroup_MaskMap_Raw.1001.png
+  artifactKey: Guid(861cc756e3011c04dac8a61a451a70d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Floor hole/Floor hole_initialShadingGroup_MaskMap_Raw.1001.png using Guid(861cc756e3011c04dac8a61a451a70d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9c40c99f5c6cf049c6a2b60d6f9647b3') in 0.0092148 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Hunter's Assets/Floor hole/Floor hole_initialShadingGroup_Normal_Raw.1001.png
+  artifactKey: Guid(1ee7e1a2267226e40a2b928aa75e6d6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Floor hole/Floor hole_initialShadingGroup_Normal_Raw.1001.png using Guid(1ee7e1a2267226e40a2b928aa75e6d6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ba5132e72679b6eee79cd3fea25ffb0d') in 0.0179832 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.196661 seconds.
+  path: Assets/Art/Hunter's Assets/Glass/Vile.obj
+  artifactKey: Guid(0bc0316f22243ef4da413ca73c175ad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Glass/Vile.obj using Guid(0bc0316f22243ef4da413ca73c175ad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bb51ee397a96439a5dcd4b4199a28d86') in 0.6651422 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.991465 seconds.
+  path: Assets/Art/Bernards Assets/Desk Materials/Sci_desk_Material.002_OcclusionRoughnessMetallic_Raw.png
+  artifactKey: Guid(9a8d12da5bca8214faa2f784d887a6e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Bernards Assets/Desk Materials/Sci_desk_Material.002_OcclusionRoughnessMetallic_Raw.png using Guid(9a8d12da5bca8214faa2f784d887a6e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '199c4f4c20055252e4a4eba24e4a7167') in 0.0166547 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.984828 seconds.
+  path: Assets/Art/Bernards Assets/Models/Sci_wall.fbx
+  artifactKey: Guid(068efcd06a17398488f014eedccd24f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Bernards Assets/Models/Sci_wall.fbx using Guid(068efcd06a17398488f014eedccd24f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9e58e94708d620cbd5326e4c0d0f650e') in 0.0959623 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Art/Bernards Assets/Models/Sci_wall_corner.fbx
+  artifactKey: Guid(3df6e6b0e3ed71c4d86064b7790ad903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Bernards Assets/Models/Sci_wall_corner.fbx using Guid(3df6e6b0e3ed71c4d86064b7790ad903) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2f96425b0130d37a8bb1f5dc25fd2b02') in 0.0523631 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.026400 seconds.
+  path: Assets/Art/Bernards Assets/Wall Materials/Damaged Wall/Sci_wall_Material.006_MaskMap_Raw.png
+  artifactKey: Guid(eb997f47bd4e4cc4bbaae32e51b532ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Bernards Assets/Wall Materials/Damaged Wall/Sci_wall_Material.006_MaskMap_Raw.png using Guid(eb997f47bd4e4cc4bbaae32e51b532ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd230e67d24198f47d591b56c6317eb7d') in 0.0095274 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.610452 seconds.
+  path: Assets/Art/Bernards Assets/Wall Materials/Damaged Wall/Sci_wall_Material.008_BaseMap_sRGB.png
+  artifactKey: Guid(62d2fa368b9074f4bb0460bad9613924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Bernards Assets/Wall Materials/Damaged Wall/Sci_wall_Material.008_BaseMap_sRGB.png using Guid(62d2fa368b9074f4bb0460bad9613924) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a04200a28ffbf1f2ab6cd6fa86bcfd8d') in 0.0165124 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Art/Bernards Assets/Wall Materials/Damaged Wall/Sci_wall_Material.008_Normal_Raw.png
+  artifactKey: Guid(42803c582429fbc4086a77d498db5052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Bernards Assets/Wall Materials/Damaged Wall/Sci_wall_Material.008_Normal_Raw.png using Guid(42803c582429fbc4086a77d498db5052) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd13a61c03e242f187271857981265af5') in 0.03671 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
