@@ -7,15 +7,20 @@ interface IInteractable
 
 public class Interactor : MonoBehaviour
 {
-    public GameObject interactee;
+    [SerializeField]
+    [Tooltip("List of Interactables to Manually Test")]
+    private GameObject[] interactee;
 
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if(interactee.TryGetComponent(out IInteractable interactObj))
-                interactObj.Interact();
+            foreach(GameObject obj in interactee)
+            {
+                if (obj.TryGetComponent(out IInteractable interactObj))
+                    interactObj.Interact();
+            }
         }
     }
 }

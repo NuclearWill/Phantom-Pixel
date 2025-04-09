@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4379260016283396356}
   - component: {fileID: 5597340214827385050}
   - component: {fileID: 678544630022073220}
+  - component: {fileID: 607806236544377516}
   m_Layer: 0
   m_Name: Elevator
   m_TagString: Untagged
@@ -121,5 +122,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7a45289d1b50d7489c1f1e1134ce823, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destinationHeight: 2
+  destinationHeight: -2
   timeToMove: 1
+--- !u!114 &607806236544377516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7275167580966507667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e81861d3e94234ba2779a5b71310d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recordTime: 5

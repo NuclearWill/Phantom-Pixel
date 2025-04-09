@@ -1,18 +1,30 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PointInTime
 {
+    // positional data
     public Vector3 position;
     public Quaternion rotation;
 
-    public Vector3 linearVelocity;
-    public Vector3 angularVelocity;
-
-    public PointInTime(Transform transform, Rigidbody rb)
+    public PointInTime(Transform transform)
     {
         this.position = transform.position;
         this.rotation = transform.rotation;
-        this.linearVelocity = rb.linearVelocity;
-        this.angularVelocity = rb.angularVelocity;
+    }
+}
+
+public class ElevatorPIT : PointInTime
+{
+    // elevator specific data
+    public bool isMoving;
+    public bool isAtStartingLocation;
+    public float elapsedTime;
+
+    public ElevatorPIT(Transform transform, bool moving, bool startingLocal, float elapsedTime) : base(transform)
+    {
+        this.isMoving = moving;
+        this.isAtStartingLocation = startingLocal;
+        this.elapsedTime = elapsedTime;
     }
 }
