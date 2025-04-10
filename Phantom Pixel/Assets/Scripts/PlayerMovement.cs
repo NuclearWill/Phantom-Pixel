@@ -5,10 +5,18 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Player Object References")]
+    public Transform orientation;
+    public Transform playerObj;
+
+    [Header("Camera References")]
+    public Transform thirdPersonCamera;
+
     [Header("Movement")]
     public float timeToMove = 0.2f;
     public float moveDistance = 2f;
     public float raycastDistance = 1.4f;
+    public float turnSpeed = 10f;
 
     [Header("Input Action Reference")]
     public InputSystem_Actions playerControls;
@@ -38,9 +46,16 @@ public class PlayerMovement : MonoBehaviour
     {
         MyInput();
 
-        if (moveDirection != Vector3.zero && !isMoving && !TimeManager.isRewinding() && !TimeManager.isPaused()) // only checks movement if there is any movement input and if the character isn't midway through to the next tile
-            if(checkWall() && checkFloor()) // ensures that the tile the player is attempting to move to is valid with no wall to block it and a floor below to stand on
+        // only continues if the player has put in a movement input and if the game isn't paused or rewinding
+        if (moveDirection != Vector3.zero && !TimeManager.isRewinding() && !TimeManager.isPaused())
+        { 
+            FaceDirection();
+
+            // ensures that the tile the player is attempting to move to is valid with no wall to block it and a floor below to stand on
+            // also only works if the player isn't already moving between tiles
+            if (checkWall() && checkFloor() && !isMoving) 
                 StartCoroutine(MovePlayer(moveDirection)); // starts the function to move the player to the next tile
+        }
     }
 
     private void MyInput()
@@ -80,6 +95,16 @@ public class PlayerMovement : MonoBehaviour
         transform.position = targetPos;
 
         isMoving = false;
+    }
+
+    private void FaceDirection()
+    {
+        // rotate orientation
+        Vector3 viewDir = transform.position - new Vector3(thirdPersonCamera.position.x, transform.position.y, thirdPersonCamera.position.z);
+        orientation.forward = viewDir.normalized;
+
+        // rotate player object
+        playerObj.forward = Vector3.Slerp(playerObj.forward, moveDirection, Time.deltaTime * turnSpeed);
     }
 
     bool checkWall()
