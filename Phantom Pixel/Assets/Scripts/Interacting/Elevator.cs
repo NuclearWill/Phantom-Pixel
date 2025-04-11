@@ -70,6 +70,11 @@ public class Elevator : MonoBehaviour, IInteractable
                 if (elevatorUser != null)
                 {
                     elevatorUser.transform.position = new Vector3(targetLocation.x, targetLocation.y + 2f, targetLocation.z);
+
+                    // attempts to access the rider's movement script to allow them to move again after the elevator is finished
+                    PlayerMovement usersMovement = elevatorUser.GetComponent<PlayerMovement>();
+                    if(usersMovement != null)
+                        usersMovement.CanMove();
                 }
 
                 isMoving = false;
@@ -98,6 +103,10 @@ public class Elevator : MonoBehaviour, IInteractable
             {
                 // the raycast will hit the model of the player. The parent of the model is the player object that we need
                 elevatorUser = hit.transform.parent.gameObject;
+                // attempts to access the rider's playerMovement script to prevent them from attemping to walk off the elevator while it's operating
+                PlayerMovement usersMovement = elevatorUser.GetComponent<PlayerMovement>();
+                if(usersMovement != null)
+                    usersMovement.CantMove();
             }
         }
     }
