@@ -5,77 +5,68 @@ using UnityEngine;
 
 public class TimeBody : MonoBehaviour
 {
-    private bool isRewinding = false;
-
-    public float recordTime = 5f;
+    private static float recordTime = 20f;
 
     List<PointInTime> history;
 
-    Rigidbody rb;
+    private bool isElevator = false;
+
+    Elevator elevatorReference = null;
 
     private void Start()
     {
+        // creates a new array to store history in
         history = new List<PointInTime>();
-        rb = GetComponent<Rigidbody>();
-    }
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Q))
-            StartRewind();
-        if (Input.GetKeyUp(KeyCode.Q))
-            StopRewind();
+        // checks to see if the object is an elevator and stores its elevator reference if so
+        if(GetComponent<Elevator>() != null)
+        {
+            isElevator = true;
+            elevatorReference = GetComponent<Elevator>();
+        }
     }
 
     private void FixedUpdate()
     {
-        if (isRewinding)
+        if (TimeManager.isRewinding())
             Rewind();
-        else
-            Record();
-    }
-
-    public void StartRewind()
-    {
-        isRewinding = true;
-        rb.isKinematic = true;
-    }
-
-    public void StopRewind()
-    {
-        if (isRewinding)
-        {
-            isRewinding = false;
-            rb.isKinematic = false;
-
-            // applies the linear and angular velocity of the latest point in history when time resumes
-            rb.linearVelocity = history[0].linearVelocity;
-            rb.angularVelocity = history[0].angularVelocity;
-        }
+        else if (!TimeManager.isPaused())
+            Record(); // only records if its not rewinding and if its not paused
     }
 
     private void Rewind()
     {
-        if (history.Count > 1)
+        if (history.Count > 0)
         {
             PointInTime nextPoint = history[0];
+            if (isElevator)
+            {
+                elevatorReference.rewindElevator((ElevatorPIT) nextPoint);
+            }
 
             // applies the position and the rotation of the point in history as its actively rewinding
             transform.position = nextPoint.position;
             transform.rotation = nextPoint.rotation;
+            
 
             history.RemoveAt(0);
         }
         else
-            StopRewind();
+            TimeManager.StopReversingTime();
     }
 
     private void Record()
     {
+        // removes the latest history if the array is full
         if (history.Count > Mathf.Round(recordTime / Time.fixedDeltaTime))
         {
             history.RemoveAt(history.Count - 1);
         }
-        history.Insert(0, new PointInTime(transform, rb));
+
+        // inserts the newest history into the array
+        if(isElevator) // creates special PIT objects for elevators
+            history.Insert(0, new ElevatorPIT(transform, elevatorReference.getMoving(), elevatorReference.getStartingLocation(), elevatorReference.getElapsedTime()));
+        else // creates default PIT objects for misc objects
+            history.Insert(0, new PointInTime(transform));
     }
 }
