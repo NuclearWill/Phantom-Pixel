@@ -37828,7 +37828,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orientation: {fileID: 359632479}
   playerObj: {fileID: 865298243}
-  thirdPersonCamera: {fileID: 330585546}
+  thirdPersonCamera: {fileID: 2073144761}
   timeToMove: 0.2
   moveDistance: 2
   raycastDistance: 1.4
@@ -39246,10 +39246,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1146427367426695487, guid: 1767e76b7a6683b45b147ac92c97cfd8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1146427367426695487, guid: 1767e76b7a6683b45b147ac92c97cfd8, type: 3}
-      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2439156846551606701, guid: 1767e76b7a6683b45b147ac92c97cfd8, type: 3}

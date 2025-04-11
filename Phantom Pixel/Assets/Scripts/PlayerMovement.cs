@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Camera References")]
     public Transform thirdPersonCamera;
+    private float cameraRotationRadians => thirdPersonCamera.eulerAngles.y * Mathf.Deg2Rad;
 
     [Header("Movement")]
     public float timeToMove = 0.2f;
@@ -21,9 +22,11 @@ public class PlayerMovement : MonoBehaviour
     [Header("Input Action Reference")]
     public InputSystem_Actions playerControls;
 
+    // private variables
     Vector3 moveDirection;
     private bool isMoving;
     private Vector3 origPos, targetPos;
+    private bool externalStop = false;
 
     private InputAction move;
 
@@ -46,8 +49,12 @@ public class PlayerMovement : MonoBehaviour
     {
         MyInput();
 
-        // only continues if the player has put in a movement input and if the game isn't paused or rewinding
-        if (moveDirection != Vector3.zero && !TimeManager.isRewinding() && !TimeManager.isPaused())
+        /* 
+         * only continues if the player has put in a movement input
+         * if the game isn't rewinding
+         * and if there isn't an external force stopping the player from moving
+         */
+        if (moveDirection != Vector3.zero && !TimeManager.isRewinding() && !externalStop)
         { 
             FaceDirection();
 
@@ -60,17 +67,28 @@ public class PlayerMovement : MonoBehaviour
 
     private void MyInput()
     {
-        // calculate moveDirection based on diagonal camera
         Vector2 initialInput = move.ReadValue<Vector2>();
-        
 
-        // collapses the input to only be at a single direction depending on which value is greater
-        if (Mathf.Abs(initialInput.x) > Mathf.Abs(initialInput.y))
-            moveDirection = new Vector3(initialInput.x, 0, 0);
-        else if (Mathf.Abs(initialInput.y) > Mathf.Abs(initialInput.x))
-            moveDirection = new Vector3(0, 0, initialInput.y);
+        // gets a Vector2 determined by where the camera is facing the level
+        Vector2 cameraInfluence = new Vector2(Mathf.Cos(cameraRotationRadians), Mathf.Sin(cameraRotationRadians));
+
+        // warps input to be change direction based off the camera's rotation
+        if (Mathf.Abs(cameraInfluence.x) >= Mathf.Abs(cameraInfluence.y))
+        {
+            moveDirection = collapseInput(initialInput);
+            
+            // inverts moveDirection if the camera is facing south
+            if(cameraInfluence.x < 0)
+                moveDirection *= -1;
+        }
         else
-            moveDirection = Vector3.zero;
+        {
+            moveDirection = collapseInput(new Vector2(initialInput.y, -initialInput.x));
+            
+            // inverts moveDirection if the camera is facing west
+            if (cameraInfluence.y < 0)
+                moveDirection *= -1;
+        }
 
         moveDirection = (moveDirection.normalized) * moveDistance;
     }
@@ -115,12 +133,49 @@ public class PlayerMovement : MonoBehaviour
 
     bool checkFloor()
     {
-        
-        return Physics.Raycast(transform.position + moveDirection, Vector3.down, raycastDistance);
+        bool struckSomething = Physics.Raycast(transform.position + moveDirection, Vector3.down, out RaycastHit hit, raycastDistance);
+        if (struckSomething)
+        {
+            // checks to see if the floor checks is water
+            if(hit.transform.CompareTag("Water"))
+            {
+                Debug.Log("Struck Water!");
+                // checks to see if time is paused. If so, it passes as walkable terrain
+                // if not, passes as unwalkable terrain
+                if (TimeManager.isPaused())
+                    return true;
+                return false;
+            }
+
+            return true;
+        }
+
+        return false;
     }
 
     public bool getIsMoving()
     {
         return isMoving;
+    }
+
+    public void CantMove()
+    {
+        externalStop = true;
+    }
+
+    public void CanMove()
+    {
+        externalStop = false;
+    }
+
+    private Vector3 collapseInput(Vector2 input)
+    {
+        // collapses the input to only be at a single direction depending on which value is greater
+        if (Mathf.Abs(input.x) > Mathf.Abs(input.y))
+            return new Vector3(input.x, 0, 0);
+        else if (Mathf.Abs(input.y) > Mathf.Abs(input.x))
+            return new Vector3(0, 0, input.y);
+        else
+            return Vector3.zero;
     }
 }

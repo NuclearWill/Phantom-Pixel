@@ -89,7 +89,6 @@ public class ThirdPersonCam : MonoBehaviour
 
     private void ChangeCamRot(float inputRotation)
     {
-        //transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y + inputRotation, transform.rotation.z, transform.rotation.w);
         transform.Rotate(0, inputRotation, 0);
     }
 }
