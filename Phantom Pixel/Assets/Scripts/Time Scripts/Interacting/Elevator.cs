@@ -1,13 +1,11 @@
 using System.Collections;
+using Unity.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class Elevator : MonoBehaviour, IInteractable
+public class Elevator : TimeBody, IInteractable
 {
-
-    private TimeBody timeBody;
-    
     // destinations for elevator
     private Vector3 location1;
     private Vector3 location2;
@@ -36,9 +34,6 @@ public class Elevator : MonoBehaviour, IInteractable
         // sets the starting and ending locations of the elevator
         location1 = transform.position;
         location2 = new Vector3(location1.x, location1.y + (2 * destinationHeight), location1.z);
-
-        // get timebody
-        timeBody = GetComponent<TimeBody>();
     }
 
 
@@ -111,25 +106,20 @@ public class Elevator : MonoBehaviour, IInteractable
         }
     }
 
-    public bool getMoving()
+    public override void ApplyRewindData(PointInTime PIT)
     {
-        return isMoving;
+        ElevatorPIT nextPoint = (ElevatorPIT) PIT;
+
+        transform.position = nextPoint.position;
+        transform.rotation = nextPoint.rotation;
+
+        isMoving = nextPoint.isMoving;
+        movingTowardsOrigin = nextPoint.isAtStartingLocation;
+        elapsedTime = nextPoint.elapsedTime;
     }
 
-    public bool getStartingLocation()
+    public override PointInTime CreatePIT()
     {
-        return movingTowardsOrigin;
-    }
-
-    public float getElapsedTime()
-    {
-        return elapsedTime;
-    }
-
-    public void rewindElevator(ElevatorPIT historyReference)
-    {
-        this.isMoving = historyReference.isMoving;
-        this.movingTowardsOrigin = historyReference.isAtStartingLocation;
-        this.elapsedTime = historyReference.elapsedTime;
+        return new ElevatorPIT(transform, isMoving, movingTowardsOrigin, elapsedTime);
     }
 }
