@@ -8,6 +8,7 @@ TagManager:
   - Tile Mesh
   - Rule Tile
   - Grid
+  - Water
   layers:
   - Default
   - TransparentFX

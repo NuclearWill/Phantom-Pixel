@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class PlayerTimeControl : MonoBehaviour
 {
+    [Header("Input Action Reference")]
+    public InputSystem_Actions playerControls;
+
     void Update()
     {
         if (!GetComponent<PlayerMovement>().getIsMoving())
