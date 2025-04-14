@@ -63,3 +63,13 @@ public class WaterPIT : PointInTime
         this.elapsedTime = elapsedTime;
     }
 }
+
+public class DoorPIT : PointInTime
+{
+    public bool open;
+
+    public DoorPIT(bool open)
+    {
+        this.open = open;
+    }
+}

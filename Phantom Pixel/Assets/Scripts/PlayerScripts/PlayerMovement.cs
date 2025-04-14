@@ -7,14 +7,18 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Player Object References")]
-    public Transform orientation, playerObj;
+    public Transform orientation;
+    public Transform playerObj;
 
     [Header("Camera References")]
     public Transform thirdPersonCamera;
     private float cameraRotationRadians => thirdPersonCamera.eulerAngles.y * Mathf.Deg2Rad;
 
     [Header("Movement")]
-    public float timeToMove = 0.2f, moveDistance = 2f, raycastDistance = 1.4f, turnSpeed = 10f;
+    [SerializeField]
+    private float timeToMove = 0.2f;
+    [SerializeField]
+    private float moveDistance = 2f, raycastDistance = 1.4f, turnSpeed = 10f;
 
     [Header("Input Action Reference")]
     public InputSystem_Actions playerControls;

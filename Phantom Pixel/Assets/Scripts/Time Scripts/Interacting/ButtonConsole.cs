@@ -2,12 +2,15 @@ using UnityEngine;
 
 public class ButtonConsole : TimeBody, IInteractable
 {
+    [Header("Terminal Settings")]
     [SerializeField]
     [Tooltip("All the objects that the console should activate")]
     private GameObject[] thingsToTrigger;
     [SerializeField]
     [Tooltip("The delay each object should wait before activating after the button is pressed")]
     private float[] triggerDelay;
+    [SerializeField]
+    private bool canReTrigger = false;
 
     private bool[] objectTriggered;
 
