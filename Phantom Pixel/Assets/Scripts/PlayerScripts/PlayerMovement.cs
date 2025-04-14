@@ -7,33 +7,25 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Player Object References")]
-    public Transform orientation;
-    public Transform playerObj;
+    public Transform orientation, playerObj;
 
     [Header("Camera References")]
     public Transform thirdPersonCamera;
     private float cameraRotationRadians => thirdPersonCamera.eulerAngles.y * Mathf.Deg2Rad;
 
     [Header("Movement")]
-    public float timeToMove = 0.2f;
-    public float moveDistance = 2f;
-    public float raycastDistance = 1.4f;
-    public float turnSpeed = 10f;
+    public float timeToMove = 0.2f, moveDistance = 2f, raycastDistance = 1.4f, turnSpeed = 10f;
 
     [Header("Input Action Reference")]
     public InputSystem_Actions playerControls;
 
     // private variables
-    private Vector3 moveDirection;
-    private bool isMoving;
-    private Vector3 origPos, targetPos;
-    private bool externalStop = false;
+    private Vector3 moveDirection, origPos, targetPos;
+    private bool isMoving, externalStop = false;
 
     private InputAction move;
 
-    private bool onStair = false;
-    private bool walkingUpStair = false;
-    private bool walkingDownStair = false;
+    private bool onStair = false, walkingUpStair = false, walkingDownStair = false;
     private float stairRot;
 
     private void Awake()

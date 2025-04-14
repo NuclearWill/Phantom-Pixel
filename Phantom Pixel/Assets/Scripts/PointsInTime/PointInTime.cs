@@ -22,14 +22,13 @@ public class MovingPIT : PointInTime
 public class ElevatorPIT : MovingPIT
 {
     // elevator specific data
-    public bool isMoving;
-    public bool isAtStartingLocation;
+    public bool isMoving, movingTowardsOrigin;
     public float elapsedTime;
 
-    public ElevatorPIT(Transform transform, bool moving, bool startingLocal, float elapsedTime) : base(transform)
+    public ElevatorPIT(Transform transform, bool moving, bool movingTowardsOrigin, float elapsedTime) : base(transform)
     {
         this.isMoving = moving;
-        this.isAtStartingLocation = startingLocal;
+        this.movingTowardsOrigin = movingTowardsOrigin;
         this.elapsedTime = elapsedTime;
     }
 }
@@ -47,5 +46,20 @@ public class ButtonPIT : PointInTime
         {
             this.objectTriggered[i] = inputTriggers[i];
         }
+    }
+}
+
+public class WaterPIT : PointInTime
+{
+    public float waterLevel, elapsedTime;
+
+    public bool isMoving, movingTowardsOrigin;
+
+    public WaterPIT(float waterLevel, bool isMoving, bool movingTowardsOrigin, float elapsedTime)
+    {
+        this.waterLevel = waterLevel;
+        this.isMoving = isMoving;
+        this.movingTowardsOrigin = movingTowardsOrigin;
+        this.elapsedTime = elapsedTime;
     }
 }
