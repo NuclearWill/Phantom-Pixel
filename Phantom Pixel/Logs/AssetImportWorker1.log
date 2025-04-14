@@ -1,29 +1,29 @@
 Using pre-set license
 Built from '6000.0/staging' branch; Version is '6000.0.42f1 (feb9a7235030) revision 16693671'; Using compiler version '193933523'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 16244 MB
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 32698 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-D:\Unity Installs\Unity 6000.0.42f1\Editor\Unity.exe
+D:\Unity Versions\6000.0.42f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-D:/Github/Unity Projects/Phantom-Pixel/Phantom Pixel
+D:/Self Made Games/Unity Games/Phantom Pixel/Phantom-Pixel/Phantom Pixel
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-59917
+61892
 -job-worker-count
-7
+5
 -background-job-worker-count
 8
 -gc-helper-count
 1
-Successfully changed project path to: D:/Github/Unity Projects/Phantom-Pixel/Phantom Pixel
-D:/Github/Unity Projects/Phantom-Pixel/Phantom Pixel
+Successfully changed project path to: D:/Self Made Games/Unity Games/Phantom Pixel/Phantom-Pixel/Phantom Pixel
+D:/Self Made Games/Unity Games/Phantom Pixel/Phantom-Pixel/Phantom Pixel
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -59,13 +59,17 @@ D:/Github/Unity Projects/Phantom-Pixel/Phantom Pixel
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [33344]  Target information:
+Player connection [16816]  Target information:
 
-Player connection [33344]  * "[IP] 192.168.4.21 [Port] 0 [Flags] 2 [Guid] 3515031979 [EditorId] 3515031979 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FQ14130) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [16816]  * "[IP] 11.96.32.134 [Port] 0 [Flags] 2 [Guid] 1054775090 [EditorId] 1054775090 [Version] 1048832 [Id] WindowsEditor(7,MyDesktop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [33344] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [33344] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 7
+Player connection [16816]  * "[IP] 169.254.24.196 [Port] 0 [Flags] 2 [Guid] 1054775090 [EditorId] 1054775090 [Version] 1048832 [Id] WindowsEditor(7,MyDesktop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [16816]  * "[IP] 169.254.50.219 [Port] 0 [Flags] 2 [Guid] 1054775090 [EditorId] 1054775090 [Version] 1048832 [Id] WindowsEditor(7,MyDesktop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [16816] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [16816] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -76,59 +80,59 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 2.49 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.72 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.42f1 (feb9a7235030)
-[Subsystems] Discovering subsystems at path D:/Unity Installs/Unity 6000.0.42f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Github/Unity Projects/Phantom-Pixel/Phantom Pixel/Assets
+[Subsystems] Discovering subsystems at path D:/Unity Versions/6000.0.42f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Self Made Games/Unity Games/Phantom Pixel/Phantom-Pixel/Phantom Pixel/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: AMD Radeon RX 6800 XT (ID=0x73bf)
-    Vendor:   ATI
-    VRAM:     16312 MB
-    Driver:   32.0.12033.1030
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
+    Vendor:   NVIDIA
+    VRAM:     5954 MB
+    Driver:   32.0.15.6094
 Initialize mono
-Mono path[0] = 'D:/Unity Installs/Unity 6000.0.42f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Unity Installs/Unity 6000.0.42f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'D:/Unity Installs/Unity 6000.0.42f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56008
+Mono path[0] = 'D:/Unity Versions/6000.0.42f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity Versions/6000.0.42f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity Versions/6000.0.42f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56492
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Unity Installs/Unity 6000.0.42f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002114 seconds.
-- Loaded All Assemblies, in  0.428 seconds
+Register platform support module: D:/Unity Versions/6000.0.42f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004615 seconds.
+- Loaded All Assemblies, in  0.609 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.382 seconds
-Domain Reload Profiling: 810ms
-	BeginReloadAssembly (165ms)
+- Finished resetting the current domain, in  0.461 seconds
+Domain Reload Profiling: 1069ms
+	BeginReloadAssembly (233ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (39ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (46ms)
-	LoadAllAssembliesAndSetupDomain (164ms)
-		LoadAssemblies (165ms)
+	RebuildCommonClasses (60ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (70ms)
+	LoadAllAssembliesAndSetupDomain (223ms)
+		LoadAssemblies (231ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (160ms)
-			TypeCache.Refresh (159ms)
-				TypeCache.ScanAssembly (145ms)
+		AnalyzeDomain (219ms)
+			TypeCache.Refresh (217ms)
+				TypeCache.ScanAssembly (201ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (383ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (461ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (328ms)
+		SetupLoadedEditorAssemblies (415ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
+			InitializePlatformSupportModulesInManaged (34ms)
 			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (61ms)
-			ProcessInitializeOnLoadAttributes (175ms)
-			ProcessInitializeOnLoadMethodAttributes (63ms)
+			BeforeProcessingInitializeOnLoad (72ms)
+			ProcessInitializeOnLoadAttributes (221ms)
+			ProcessInitializeOnLoadMethodAttributes (83ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -140,11 +144,11 @@ Import Worker Mode flag is 0x00
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.048 seconds
+- Loaded All Assemblies, in  1.120 seconds
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 1.07 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.81 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Package Manager log level set to [2]
@@ -152,112 +156,52 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.817 seconds
-Domain Reload Profiling: 1863ms
-	BeginReloadAssembly (225ms)
+- Finished resetting the current domain, in  1.285 seconds
+Domain Reload Profiling: 2402ms
+	BeginReloadAssembly (269ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (37ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (714ms)
-		LoadAssemblies (552ms)
+	RebuildCommonClasses (56ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (716ms)
+		LoadAssemblies (520ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (308ms)
-			TypeCache.Refresh (222ms)
-				TypeCache.ScanAssembly (203ms)
-			BuildScriptInfoCaches (70ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (817ms)
+		AnalyzeDomain (376ms)
+			TypeCache.Refresh (271ms)
+				TypeCache.ScanAssembly (252ms)
+			BuildScriptInfoCaches (80ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (1286ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (635ms)
+		SetupLoadedEditorAssemblies (1053ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (116ms)
-			ProcessInitializeOnLoadAttributes (407ms)
-			ProcessInitializeOnLoadMethodAttributes (103ms)
-			AfterProcessingInitializeOnLoad (2ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (146ms)
+			ProcessInitializeOnLoadAttributes (764ms)
+			ProcessInitializeOnLoadMethodAttributes (129ms)
+			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 1.33 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 1.88 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 214 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6471 unused Assets / (4.6 MB). Loaded Objects now: 7178.
-Memory consumption went from 167.7 MB to 163.1 MB.
-Total: 9.979000 ms (FindLiveObjects: 1.037900 ms CreateObjectMapping: 0.741100 ms MarkObjects: 5.334200 ms  DeleteObjects: 2.864400 ms)
+Unloading 216 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6470 unused Assets / (5.2 MB). Loaded Objects now: 7183.
+Memory consumption went from 165.7 MB to 160.5 MB.
+Total: 12.956800 ms (FindLiveObjects: 0.923700 ms CreateObjectMapping: 0.692400 ms MarkObjects: 7.729800 ms  DeleteObjects: 3.609000 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 326981.040503 seconds.
-  path: Assets/Art/Hunter's Assets/computer 1/base
-  artifactKey: Guid(8ea9edf7c8a9952488ec5147a729c778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Hunter's Assets/computer 1/base using Guid(8ea9edf7c8a9952488ec5147a729c778) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bc65a502de67ccb326448b7ffa63cb18') in 0.0148232 seconds
+  Time since last request: 40103.638305 seconds.
+  path: Assets/Art/AllSkyFree/_AllSkyFreeDemoEnvironment
+  artifactKey: Guid(4392334f044e44affbf9f5162eb718ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/AllSkyFree/_AllSkyFreeDemoEnvironment using Guid(4392334f044e44affbf9f5162eb718ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bfab856e407138b634a206e4722adf5d') in 0.0064178 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
-========================================================================
-Received Import Request.
-  Time since last request: 4.989427 seconds.
-  path: Assets/Art/Hunter's Assets/computer/base/computer_standardSurface1_Emissive_sRGB.1001.png
-  artifactKey: Guid(3a5e6f66dcdb52f40a7f0dcd0c969ec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Hunter's Assets/computer/base/computer_standardSurface1_Emissive_sRGB.1001.png using Guid(3a5e6f66dcdb52f40a7f0dcd0c969ec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aa33c6e39467620495ec6df5ae38980d') in 0.0807765 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Art/Hunter's Assets/computer/base/New Material.mat
-  artifactKey: Guid(0016c373d0cbe7749b8f48a70ad23660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Hunter's Assets/computer/base/New Material.mat using Guid(0016c373d0cbe7749b8f48a70ad23660) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4bc7032e9275df07d5c1b799478b7d30') in 4.1982167 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.210323 seconds.
-  path: Assets/Art/Jenna's Assets/Materials/platform.mat
-  artifactKey: Guid(5f2219a2cccbfe24186dc0fd29119529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Jenna's Assets/Materials/platform.mat using Guid(5f2219a2cccbfe24186dc0fd29119529) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1d5f1636cc11f1c077850a47c728b976') in 0.0962299 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Art/Jenna's Assets/Materials/stage_lights.mat
-  artifactKey: Guid(1720f7c85dfc84843b74f13636c52a7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Jenna's Assets/Materials/stage_lights.mat using Guid(1720f7c85dfc84843b74f13636c52a7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '09ac535a7743a3462f456010de519c43') in 0.1095148 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Art/Jenna's Assets/Materials/wedge.mat
-  artifactKey: Guid(5f085082f82df6f48bc813b8141c18f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Jenna's Assets/Materials/wedge.mat using Guid(5f085082f82df6f48bc813b8141c18f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7d8d5bae6ba94bd998c58c744f9a236e') in 0.0728771 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Art/Jenna's Assets/Materials/rail.mat
-  artifactKey: Guid(f824ea6d6892ce84d981a615360e0c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Jenna's Assets/Materials/rail.mat using Guid(f824ea6d6892ce84d981a615360e0c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'daa0103b8719f15d02b6afe0c00d39dc') in 0.0753063 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Art/Jenna's Assets/Materials/spotlight_body.mat
-  artifactKey: Guid(4383c2c64fe96d04c8465a7adfc2ea07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Jenna's Assets/Materials/spotlight_body.mat using Guid(4383c2c64fe96d04c8465a7adfc2ea07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '47cefee854e0f2546b30c79009d72cd5') in 0.0749872 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
