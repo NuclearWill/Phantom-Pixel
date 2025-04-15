@@ -9,6 +9,7 @@ TagManager:
   - Rule Tile
   - Grid
   - Water
+  - Stair
   layers:
   - Default
   - TransparentFX
