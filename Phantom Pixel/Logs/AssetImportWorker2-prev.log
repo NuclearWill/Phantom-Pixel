@@ -15,7 +15,7 @@ D:/Github/Unity Projects/Phantom-Pixel/Phantom Pixel
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-50665
+52302
 -job-worker-count
 7
 -background-job-worker-count
@@ -59,12 +59,12 @@ D:/Github/Unity Projects/Phantom-Pixel/Phantom Pixel
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [2008]  Target information:
+Player connection [33676]  Target information:
 
-Player connection [2008]  * "[IP] 192.168.4.21 [Port] 0 [Flags] 2 [Guid] 4287933049 [EditorId] 4287933049 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FQ14130) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [33676]  * "[IP] 192.168.4.21 [Port] 0 [Flags] 2 [Guid] 121979456 [EditorId] 121979456 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FQ14130) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [2008] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [2008] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [33676] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [33676] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -76,7 +76,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 2.32 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.84 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.42f1 (feb9a7235030)
 [Subsystems] Discovering subsystems at path D:/Unity Installs/Unity 6000.0.42f1/Editor/Data/Resources/UnitySubsystems
@@ -92,43 +92,43 @@ Initialize mono
 Mono path[0] = 'D:/Unity Installs/Unity 6000.0.42f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity Installs/Unity 6000.0.42f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity Installs/Unity 6000.0.42f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56772
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56764
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity Installs/Unity 6000.0.42f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002112 seconds.
-- Loaded All Assemblies, in  0.406 seconds
+Registered in 0.002113 seconds.
+- Loaded All Assemblies, in  0.491 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.368 seconds
-Domain Reload Profiling: 773ms
-	BeginReloadAssembly (152ms)
+- Finished resetting the current domain, in  0.393 seconds
+Domain Reload Profiling: 883ms
+	BeginReloadAssembly (189ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (39ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (159ms)
-		LoadAssemblies (152ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (191ms)
+		LoadAssemblies (188ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (155ms)
-			TypeCache.Refresh (154ms)
-				TypeCache.ScanAssembly (140ms)
+		AnalyzeDomain (187ms)
+			TypeCache.Refresh (186ms)
+				TypeCache.ScanAssembly (169ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (368ms)
+	FinalizeReload (393ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (313ms)
+		SetupLoadedEditorAssemblies (356ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
+			InitializePlatformSupportModulesInManaged (27ms)
 			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (56ms)
-			ProcessInitializeOnLoadAttributes (157ms)
-			ProcessInitializeOnLoadMethodAttributes (72ms)
+			BeforeProcessingInitializeOnLoad (65ms)
+			ProcessInitializeOnLoadAttributes (198ms)
+			ProcessInitializeOnLoadMethodAttributes (61ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -140,11 +140,11 @@ Import Worker Mode flag is 0x00
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.795 seconds
+- Loaded All Assemblies, in  1.008 seconds
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Package Manager log level set to [2]
@@ -152,388 +152,132 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.707 seconds
-Domain Reload Profiling: 1501ms
-	BeginReloadAssembly (191ms)
+- Finished resetting the current domain, in  0.917 seconds
+Domain Reload Profiling: 1924ms
+	BeginReloadAssembly (234ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (31ms)
-	RebuildCommonClasses (39ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (514ms)
-		LoadAssemblies (361ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (51ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (662ms)
+		LoadAssemblies (441ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (276ms)
-			TypeCache.Refresh (204ms)
-				TypeCache.ScanAssembly (185ms)
-			BuildScriptInfoCaches (58ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (707ms)
+		AnalyzeDomain (376ms)
+			TypeCache.Refresh (273ms)
+				TypeCache.ScanAssembly (245ms)
+			BuildScriptInfoCaches (80ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (918ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (538ms)
+		SetupLoadedEditorAssemblies (717ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (94ms)
-			ProcessInitializeOnLoadAttributes (355ms)
-			ProcessInitializeOnLoadMethodAttributes (81ms)
-			AfterProcessingInitializeOnLoad (2ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (114ms)
+			ProcessInitializeOnLoadAttributes (465ms)
+			ProcessInitializeOnLoadMethodAttributes (125ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 1.05 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.24 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 214 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6462 unused Assets / (4.2 MB). Loaded Objects now: 7169.
-Memory consumption went from 167.6 MB to 163.4 MB.
-Total: 7.986600 ms (FindLiveObjects: 0.830400 ms CreateObjectMapping: 0.338100 ms MarkObjects: 4.636800 ms  DeleteObjects: 2.180700 ms)
+Unloading 6471 unused Assets / (4.5 MB). Loaded Objects now: 7178.
+Memory consumption went from 165.8 MB to 161.2 MB.
+Total: 13.172500 ms (FindLiveObjects: 1.228500 ms CreateObjectMapping: 0.511300 ms MarkObjects: 7.805300 ms  DeleteObjects: 3.625800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 174546.735265 seconds.
-  path: Assets/Bernards Assets
-  artifactKey: Guid(c7e9d71e10acc344aa1c9414077cc431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets using Guid(c7e9d71e10acc344aa1c9414077cc431) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0e1ca3f901410b268faa9ea185254731') in 0.0053607 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 121366.106740 seconds.
+  path: Assets/Art/Hunter's Assets/Carpet/Carpet_Dirt_Ready.prefab
+  artifactKey: Guid(078ddd6272cd8f542a1ec77e61113ba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Carpet/Carpet_Dirt_Ready.prefab using Guid(078ddd6272cd8f542a1ec77e61113ba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a66f283fe8824c8b7ae34d5240e8e7ee') in 0.694906 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.706113 seconds.
-  path: Assets/Bernards Assets/Door materials
-  artifactKey: Guid(a41dd25c76b3b5144bcaa1e1f0df290f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Door materials using Guid(a41dd25c76b3b5144bcaa1e1f0df290f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6c0b3b40c6920858aa9ee453f2cddeb7') in 0.0004516 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000048 seconds.
+  path: Assets/Resources/3D Rule Tiles/Rule Tiles/Brick.prefab
+  artifactKey: Guid(4d9e2eca28d049349b6c0abbdf30ac06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Rule Tiles/Rule Tiles/Brick.prefab using Guid(4d9e2eca28d049349b6c0abbdf30ac06) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7d240864c662fdb2785d0eb695fe4dbf') in 4.4539377 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 132
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.148658 seconds.
-  path: Assets/Bernards Assets/Models
-  artifactKey: Guid(1d1bcfe9972aa4e47882debe7d0003db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Models using Guid(1d1bcfe9972aa4e47882debe7d0003db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0761a94acfcbc0764b61364f8b571a21') in 0.0004148 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.097835 seconds.
-  path: Assets/Bernards Assets/Models/Sci_desk.fbx
-  artifactKey: Guid(c61f9f0ac69b583409d81758861a26dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Models/Sci_desk.fbx using Guid(c61f9f0ac69b583409d81758861a26dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f9d17c60e7d3efad74dbbc4ecff1ec73') in 0.5343194 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
-
-========================================================================
-Received Import Request.
-  Time since last request: 70.227312 seconds.
-  path: Assets/Bernards Assets/Models/Security_Door.fbx
-  artifactKey: Guid(ed88ab659a6abcd469b1f6aea8a32b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Models/Security_Door.fbx using Guid(ed88ab659a6abcd469b1f6aea8a32b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '59b89b436082716d41388d04274839b5') in 0.0440544 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
-
-========================================================================
-Received Import Request.
-  Time since last request: 28.951763 seconds.
-  path: Assets/Bernards Assets/Models/GameShow Sign.fbx
-  artifactKey: Guid(5d385c321df69f943a848f5151bfaed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Models/GameShow Sign.fbx using Guid(5d385c321df69f943a848f5151bfaed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '261fd6b9c02620b486ee6606fdfcc43a') in 0.0522321 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.543570 seconds.
-  path: Assets/Bernards Assets/Models/Door.fbx
-  artifactKey: Guid(5d385c321df69f943a848f5151bfaed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Models/Door.fbx using Guid(5d385c321df69f943a848f5151bfaed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8572135341695be06184cf33943a63f9') in 0.048772 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.499491 seconds.
-  path: Assets/Bernards Assets/Wall Materials
-  artifactKey: Guid(de20e48a039f3a44f8b135cf82906676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Wall Materials using Guid(de20e48a039f3a44f8b135cf82906676) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e703baa2d3d3643438796b94557ab475') in 0.0004572 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 52.347353 seconds.
-  path: Assets/Bernards Assets/Door materials/GameShow Sign_Material.002_BaseMap_sRGB.png
-  artifactKey: Guid(11b3c9d3857cd8944a38e8f13cf7b83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Door materials/GameShow Sign_Material.002_BaseMap_sRGB.png using Guid(11b3c9d3857cd8944a38e8f13cf7b83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '561c7825bfcdd765a0aafdfed9fab27e') in 0.0268562 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Bernards Assets/Door materials/GameShow Sign_Material.003_Normal_Raw.png
-  artifactKey: Guid(91ed191df3e1c8c42a96d5a6697708a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Door materials/GameShow Sign_Material.003_Normal_Raw.png using Guid(91ed191df3e1c8c42a96d5a6697708a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dbb30728b02428ef16cae1fa2be7e6db') in 0.0191616 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Bernards Assets/Door materials/GameShow Sign_Material_Normal_Raw.png
-  artifactKey: Guid(56a9b45efa451734aa7fa0be612662ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Door materials/GameShow Sign_Material_Normal_Raw.png using Guid(56a9b45efa451734aa7fa0be612662ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '543035b5b7e52eecdc54452f0e68bed0') in 0.0158553 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Bernards Assets/Door materials/GameShow Sign_Material.003_MaskMap_Raw.png
-  artifactKey: Guid(3ee5e82f150bfdc4e88aaa451c2a0513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Door materials/GameShow Sign_Material.003_MaskMap_Raw.png using Guid(3ee5e82f150bfdc4e88aaa451c2a0513) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2fd6c8b5cb9b872af5ece54dcb567593') in 0.0157822 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.774270 seconds.
-  path: Assets/Bernards Assets/Security Door Materials
-  artifactKey: Guid(3f63be6097dab7b44a6483d7375b71b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Security Door Materials using Guid(3f63be6097dab7b44a6483d7375b71b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '64e65a4fbd692f6a313e9fc0559f1774') in 0.0009213 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.629069 seconds.
-  path: Assets/Bernards Assets/Security Door Materials/Security_Door_Material.001_BaseMap_sRGB.png
-  artifactKey: Guid(e66e3d01830cc864291d7d83afa04614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Security Door Materials/Security_Door_Material.001_BaseMap_sRGB.png using Guid(e66e3d01830cc864291d7d83afa04614) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '04f35a14bc87a3e27a46720d790b1ff4') in 0.0150401 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Bernards Assets/Security Door Materials/Security_Door_Material.002_Normal_Raw.png
-  artifactKey: Guid(533b8acec1d1310459d38f2cc37a7c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Security Door Materials/Security_Door_Material.002_Normal_Raw.png using Guid(533b8acec1d1310459d38f2cc37a7c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '539cb7f6a8db0b53e99b1abcba3b45e1') in 0.0155738 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Bernards Assets/Security Door Materials/Security_Door_Material.002_MaskMap_Raw.png
-  artifactKey: Guid(7293bf1ee083bb5469c3c18e4bfb2a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Security Door Materials/Security_Door_Material.002_MaskMap_Raw.png using Guid(7293bf1ee083bb5469c3c18e4bfb2a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ee68657dd93cacf2ba5f88b5c8233780') in 0.0146194 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.716228 seconds.
-  path: Assets/Bernards Assets/Security Door Materials/Sliding Panel.mat
-  artifactKey: Guid(8b2a71f40ecfcd14eba08f483a0d107e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Security Door Materials/Sliding Panel.mat using Guid(8b2a71f40ecfcd14eba08f483a0d107e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '148657c2c07db5e745476ff272f33056') in 0.0144183 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.541934 seconds.
-  path: Assets/bomb/Bomb_standardSurface1_BaseMap_sRGB.1001.png
-  artifactKey: Guid(fa101de7e15b29740928b38cb998b681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/bomb/Bomb_standardSurface1_BaseMap_sRGB.1001.png using Guid(fa101de7e15b29740928b38cb998b681) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8e5593ed58e5007ed1b5498ce356dcb0') in 0.0193699 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Large computer Buttons/buttons_standardSurface1_MaskMap.png
-  artifactKey: Guid(d3cb1c4e1b57323468185c4845a7adee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Large computer Buttons/buttons_standardSurface1_MaskMap.png using Guid(d3cb1c4e1b57323468185c4845a7adee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d70746fb9a89b65b0d6d0a995c07451') in 0.0221741 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Resources/3D Rule Tiles/Textures/Dirt Side.png
-  artifactKey: Guid(337dbd4da771f2f46bf059c777bfac5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3D Rule Tiles/Textures/Dirt Side.png using Guid(337dbd4da771f2f46bf059c777bfac5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dff759e07f0f00c1a849150e5c291f6b') in 0.0119835 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Large computer Buttons/buttons_standardSurface1_BaseMap.png
-  artifactKey: Guid(f4179b2927a825e4a8a153fc7ba8d90c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Large computer Buttons/buttons_standardSurface1_BaseMap.png using Guid(f4179b2927a825e4a8a153fc7ba8d90c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '422b72e58346ccee5038c52383676dc6') in 0.0156709 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.000050 seconds.
+  path: Assets/Art/Hunter's Assets/ready Items/Carpet_Rouph_Stars_Ready.prefab
+  artifactKey: Guid(6bcb3530a6150d6489708d24e0e15266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/ready Items/Carpet_Rouph_Stars_Ready.prefab using Guid(6bcb3530a6150d6489708d24e0e15266) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '005c634f2d61411e59a4c2a1454ab797') in 0.0615984 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000025 seconds.
-  path: Assets/Carpet/Carpet Blank/Carpet Stars/Carpet_standardSurface1_MaskMap_Raw.1001.png
-  artifactKey: Guid(7677e071b65edb34282022b0967a3bc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Carpet/Carpet Blank/Carpet Stars/Carpet_standardSurface1_MaskMap_Raw.1001.png using Guid(7677e071b65edb34282022b0967a3bc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e468d274563590388f1eb1c89c97cce3') in 0.0808756 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  path: Assets/Art/Hunter's Assets/ready Items/catwalk gaurd_Ready.prefab
+  artifactKey: Guid(4c8489feb941c66409bebebbcf78e36f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/ready Items/catwalk gaurd_Ready.prefab using Guid(4c8489feb941c66409bebebbcf78e36f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e9c1f22db08ff6d6959a0190cfdd61cf') in 3.7963727 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/Button/BUTTON_standardSurface2_Emissive_sRGB.1001.png
-  artifactKey: Guid(7bb34c12f5573cb49bf478bbcb0d7db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Button/BUTTON_standardSurface2_Emissive_sRGB.1001.png using Guid(7bb34c12f5573cb49bf478bbcb0d7db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8882055ea127262a338708069abffec5') in 0.0174416 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/computer/base/computer_standardSurface1_Emissive_sRGB.1001.png
-  artifactKey: Guid(1492b1c071ef50547b9d540fbc5e6821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/computer/base/computer_standardSurface1_Emissive_sRGB.1001.png using Guid(1492b1c071ef50547b9d540fbc5e6821) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b1b568fe864ab44d1f0c8b255d9cfe42') in 0.0152009 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Large computer Buttons/buttons_standardSurface1_Normal.png
-  artifactKey: Guid(ca8112139a4986c4a9270d167875c1e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Large computer Buttons/buttons_standardSurface1_Normal.png using Guid(ca8112139a4986c4a9270d167875c1e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5c31d28fd232b1e6b144e0bbb7155ed7') in 0.0278433 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Carpet/Carpet Dirt/Dirt/Carpet_standardSurface1_BaseMap_sRGB.1001.png
-  artifactKey: Guid(c8f062c8730144c408c900550536e5cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Carpet/Carpet Dirt/Dirt/Carpet_standardSurface1_BaseMap_sRGB.1001.png using Guid(c8f062c8730144c408c900550536e5cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '08216551cc85f50ba4dc5fbe56008385') in 0.0238946 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Carpet/Carpet Blank/carpet Rouph/Carpet_standardSurface1_BaseMap_sRGB.1001.png
-  artifactKey: Guid(d82a2dc6580a45c43bb35be836488913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Carpet/Carpet Blank/carpet Rouph/Carpet_standardSurface1_BaseMap_sRGB.1001.png using Guid(d82a2dc6580a45c43bb35be836488913) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7865c8e5b518311ae141700cc5d257f3') in 0.0248499 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Resources/3D Rule Tiles/Textures/Brick_Normal.png
-  artifactKey: Guid(fd07b2107c8679941bb9756f39903629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/3D Rule Tiles/Textures/Brick_Normal.png using Guid(fd07b2107c8679941bb9756f39903629) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '58992594023c7a74bf9cbbb51c43aa10') in 0.0182095 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Button/BUTTON_standardSurface2_Normal_Raw.1001.png
-  artifactKey: Guid(4a238defad1a5954f89c3f01a9aad217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Button/BUTTON_standardSurface2_Normal_Raw.1001.png using Guid(4a238defad1a5954f89c3f01a9aad217) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4e7f1b20c7ee1e6b0905e1ce64e01ac4') in 0.0151252 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 34.082801 seconds.
-  path: Assets/Bernards Assets/Security Door Materials/Door Frame.mat
-  artifactKey: Guid(8b2a71f40ecfcd14eba08f483a0d107e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Security Door Materials/Door Frame.mat using Guid(8b2a71f40ecfcd14eba08f483a0d107e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5101c561a36e1b5adcfaab535a607b57') in 0.0163337 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.263375 seconds.
-  path: Assets/Bernards Assets/Security Door Materials/Door Frame.mat
-  artifactKey: Guid(8b2a71f40ecfcd14eba08f483a0d107e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Security Door Materials/Door Frame.mat using Guid(8b2a71f40ecfcd14eba08f483a0d107e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '105044caa19e58aebcb8d044d738d72c') in 0.0193978 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.361462 seconds.
-  path: Assets/Bernards Assets/Security Door Materials/Sliding Panel.mat
-  artifactKey: Guid(9a0b9ef85ed3f6e408f568a56350750a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Security Door Materials/Sliding Panel.mat using Guid(9a0b9ef85ed3f6e408f568a56350750a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0876b9ab6fda7b995b965e8418abf23a') in 0.0132215 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.348755 seconds.
-  path: Assets/Bernards Assets/Security Door Materials/Security_Door_Material.002_Normal_Raw.png
-  artifactKey: Guid(533b8acec1d1310459d38f2cc37a7c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Security Door Materials/Security_Door_Material.002_Normal_Raw.png using Guid(533b8acec1d1310459d38f2cc37a7c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aa7edeb15937fa92923142d332f1fa9d') in 0.0145829 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 106.964920 seconds.
-  path: Assets/Bernards Assets/Wall Materials/Sci_wall_Material.006_BaseMap_sRGB.png
-  artifactKey: Guid(36d4de59401b53542995594f47c78b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Wall Materials/Sci_wall_Material.006_BaseMap_sRGB.png using Guid(36d4de59401b53542995594f47c78b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3d66dfd1771f27716ed4830e65048107') in 0.0134305 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Bernards Assets/Wall Materials/Sci_wall_Material.006_MaskMap_Raw.png
-  artifactKey: Guid(c0521f4a43812c2439b7a6828ff7e7a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Wall Materials/Sci_wall_Material.006_MaskMap_Raw.png using Guid(c0521f4a43812c2439b7a6828ff7e7a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7d6da8421abec2a0dc67649588582d1e') in 0.0197144 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.000044 seconds.
+  path: Assets/Art/Hunter's Assets/ready Items/BUTTON_ready.prefab
+  artifactKey: Guid(2fa38625cc2efcd4fb24d5cfdf033fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/ready Items/BUTTON_ready.prefab using Guid(2fa38625cc2efcd4fb24d5cfdf033fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '233524208e9914b327bba4b663aa3167') in 0.0233331 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000045 seconds.
-  path: Assets/Bernards Assets/Wall Materials/Sci_wall_Material.008_Normal_Raw.png
-  artifactKey: Guid(95b03dcc6708dff4f86632039b263358) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Wall Materials/Sci_wall_Material.008_Normal_Raw.png using Guid(95b03dcc6708dff4f86632039b263358) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b61c362486665e3296254da7d29c938b') in 0.0157234 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Bernards Assets/Wall Materials/Sci_wall_Material.008_BaseMap_sRGB.png
-  artifactKey: Guid(2ed3fe955cf5b2e4cafc46a4f24c7b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Wall Materials/Sci_wall_Material.008_BaseMap_sRGB.png using Guid(2ed3fe955cf5b2e4cafc46a4f24c7b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '437f1f01cd23d58934fda27a199784b7') in 0.0161333 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.578295 seconds.
-  path: Assets/Bernards Assets/Desk Materials/Sci_desk_Material.002_BaseColor_sRGB.png
-  artifactKey: Guid(fd1fbf5cef90b1347a09cf7bbdb283d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Desk Materials/Sci_desk_Material.002_BaseColor_sRGB.png using Guid(fd1fbf5cef90b1347a09cf7bbdb283d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5e5dcadaaffb701ff20f2d2b62705c44') in 0.0183079 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Bernards Assets/Desk Materials/Sci_desk_Material.003_BaseColor_sRGB.png
-  artifactKey: Guid(cd386d52535e2a44299e71f841d89c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Desk Materials/Sci_desk_Material.003_BaseColor_sRGB.png using Guid(cd386d52535e2a44299e71f841d89c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'afcc31316e2ed418487c2bd0b12fcf6f') in 0.0173655 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  path: Assets/Art/Hunter's Assets/ready Items/Carpet_Dirt_Ready.prefab
+  artifactKey: Guid(d369f1db778a4494aa6dc6f3455c6ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/ready Items/Carpet_Dirt_Ready.prefab using Guid(d369f1db778a4494aa6dc6f3455c6ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '60e2a8bbd2f50ce21ca8e355685face5') in 0.0576659 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000027 seconds.
-  path: Assets/Bernards Assets/Desk Materials/Sci_desk_Material.003_Normal_Raw.png
-  artifactKey: Guid(57e076017bcd33e45b61250200523312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Desk Materials/Sci_desk_Material.003_Normal_Raw.png using Guid(57e076017bcd33e45b61250200523312) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3faa37952ec60703b4b2845200006f3a') in 0.0166822 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  path: Assets/Resources/3D Rule Tiles/Rule Tiles/Dirt Ground.prefab
+  artifactKey: Guid(78a0eb2e3f675ac4badedf887f23c295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Rule Tiles/Rule Tiles/Dirt Ground.prefab using Guid(78a0eb2e3f675ac4badedf887f23c295) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '96d87b02075fb463b5207426ca6c066c') in 0.0780448 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 132
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Bernards Assets/Desk Materials/Sci_desk_Material.002_OcclusionRoughnessMetallic_Raw.png
-  artifactKey: Guid(9a8d12da5bca8214faa2f784d887a6e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Desk Materials/Sci_desk_Material.002_OcclusionRoughnessMetallic_Raw.png using Guid(9a8d12da5bca8214faa2f784d887a6e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '65920a1ef0e6d21505655afd205f38a0') in 0.0134298 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 43.917431 seconds.
+  path: Assets/Art/Materials/Water Mat.mat
+  artifactKey: Guid(1e679083c19ac0647931bc8b7181adbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Materials/Water Mat.mat using Guid(1e679083c19ac0647931bc8b7181adbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1539ea6f05ed995a93512657f1dad4f9') in 2.5851766 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
 
 ========================================================================
 Received Import Request.
-  Time since last request: 45.969526 seconds.
-  path: Assets/Bernards Assets/Door materials/Door Frame.mat
-  artifactKey: Guid(7cf97e55d649d934da8bcd7c38d5a607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Door materials/Door Frame.mat using Guid(7cf97e55d649d934da8bcd7c38d5a607) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd8904bae9e441368c05b2e1239997153') in 0.0200184 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+  Time since last request: 63.273454 seconds.
+  path: Assets/Scenes/First Level.unity
+  artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/First Level.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '34e69ab14ac6047a30b0c24bc5793361') in 0.0005112 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 78.214733 seconds.
-  path: Assets/Bernards Assets/Door materials/Knob.mat
-  artifactKey: Guid(5846072733a374f4a9272acb8671cc1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bernards Assets/Door materials/Knob.mat using Guid(5846072733a374f4a9272acb8671cc1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '13dda9e6e3e26f36bc3c52b6e19a059f') in 0.0222174 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 19.079493 seconds.
+  path: Assets/Scenes/First Level 1.unity
+  artifactKey: Guid(13e53959327cc9b4eacbd4e14148db14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/First Level 1.unity using Guid(13e53959327cc9b4eacbd4e14148db14) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3c7933a122aa54929048b5c1209cfc40') in 0.0004972 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 590.746702 seconds.
+  path: Assets/Scenes/Bernard Imports.unity
+  artifactKey: Guid(f70b6132acb04be41980c99e3da6a4e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Bernard Imports.unity using Guid(f70b6132acb04be41980c99e3da6a4e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '82e7071e57ddb88c35a3f95ed19932d4') in 0.0007496 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
