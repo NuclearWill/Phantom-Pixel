@@ -1,29 +1,50 @@
 Using pre-set license
 Built from '6000.0/staging' branch; Version is '6000.0.42f1 (feb9a7235030) revision 16693671'; Using compiler version '193933523'; Build Type 'Release'
+<<<<<<< Updated upstream
 OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 32555 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
 D:\6000.0.42f1\Editor\Unity.exe
+=======
+OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'en' Physical Memory: 32538 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.42f1\Editor\Unity.exe
+>>>>>>> Stashed changes
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
+<<<<<<< Updated upstream
 D:/Phantom-Pixel/Phantom Pixel
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
 54479
+=======
+C:/Users/hocch/Desktop/Time To think/Phantom-Pixel/Phantom Pixel
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49432
+>>>>>>> Stashed changes
 -job-worker-count
 9
 -background-job-worker-count
 8
 -gc-helper-count
 1
+<<<<<<< Updated upstream
 Successfully changed project path to: D:/Phantom-Pixel/Phantom Pixel
 D:/Phantom-Pixel/Phantom Pixel
+=======
+Successfully changed project path to: C:/Users/hocch/Desktop/Time To think/Phantom-Pixel/Phantom Pixel
+C:/Users/hocch/Desktop/Time To think/Phantom-Pixel/Phantom Pixel
+>>>>>>> Stashed changes
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -59,12 +80,21 @@ D:/Phantom-Pixel/Phantom Pixel
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< Updated upstream
 Player connection [26064]  Target information:
 
 Player connection [26064]  * "[IP] 172.20.16.186 [Port] 0 [Flags] 2 [Guid] 1224956520 [EditorId] 1224956520 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-8KTVPCA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
 Player connection [26064] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [26064] Host joined alternative multi-casting on [225.0.0.222:34997]...
+=======
+Player connection [3472]  Target information:
+
+Player connection [3472]  * "[IP] 10.17.4.94 [Port] 0 [Flags] 2 [Guid] 3044233028 [EditorId] 3044233028 [Version] 1048832 [Id] WindowsEditor(7,Viridi) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [3472] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [3472] Host joined alternative multi-casting on [225.0.0.222:34997]...
+>>>>>>> Stashed changes
 JobSystem: Creating JobQueue using job-worker-count value 9
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -76,6 +106,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
+<<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 2.10 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.42f1 (feb9a7235030)
@@ -103,11 +134,41 @@ Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  0.380 seconds
 Domain Reload Profiling: 839ms
 	BeginReloadAssembly (176ms)
+=======
+Refreshing native plugins compatible for Editor in 2.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.42f1 (feb9a7235030)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.42f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/hocch/Desktop/Time To think/Phantom-Pixel/Phantom Pixel/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 SUPER (ID=0x1e84)
+    Vendor:   NVIDIA
+    VRAM:     7989 MB
+    Driver:   32.0.15.7283
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.42f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.42f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.42f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56548
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.42f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004108 seconds.
+- Loaded All Assemblies, in  0.425 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.360 seconds
+Domain Reload Profiling: 781ms
+	BeginReloadAssembly (146ms)
+>>>>>>> Stashed changes
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
+<<<<<<< Updated upstream
 	RebuildCommonClasses (41ms)
 	RebuildNativeTypeToScriptingClass (14ms)
 	initialDomainReloadingComplete (52ms)
@@ -129,6 +190,29 @@ Domain Reload Profiling: 839ms
 			BeforeProcessingInitializeOnLoad (63ms)
 			ProcessInitializeOnLoadAttributes (168ms)
 			ProcessInitializeOnLoadMethodAttributes (62ms)
+=======
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (170ms)
+		LoadAssemblies (142ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (167ms)
+			TypeCache.Refresh (165ms)
+				TypeCache.ScanAssembly (151ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (361ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (310ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (61ms)
+			ProcessInitializeOnLoadAttributes (158ms)
+			ProcessInitializeOnLoadMethodAttributes (61ms)
+>>>>>>> Stashed changes
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -140,11 +224,19 @@ Import Worker Mode flag is 0x00
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
+<<<<<<< Updated upstream
 - Loaded All Assemblies, in  0.906 seconds
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+=======
+- Loaded All Assemblies, in  0.940 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 1.32 ms, found 3 plugins.
+>>>>>>> Stashed changes
 Native extension for WindowsStandalone target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Package Manager log level set to [2]
@@ -152,13 +244,20 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Finished resetting the current domain, in  0.878 seconds
 Domain Reload Profiling: 1783ms
 	BeginReloadAssembly (218ms)
+=======
+- Finished resetting the current domain, in  0.794 seconds
+Domain Reload Profiling: 1725ms
+	BeginReloadAssembly (197ms)
+>>>>>>> Stashed changes
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 		CreateAndSetChildDomain (29ms)
 	RebuildCommonClasses (42ms)
 	RebuildNativeTypeToScriptingClass (15ms)
@@ -175,17 +274,43 @@ Domain Reload Profiling: 1783ms
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
 		SetupLoadedEditorAssemblies (685ms)
+=======
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (50ms)
+	LoadAllAssembliesAndSetupDomain (621ms)
+		LoadAssemblies (447ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (293ms)
+			TypeCache.Refresh (211ms)
+				TypeCache.ScanAssembly (191ms)
+			BuildScriptInfoCaches (67ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (794ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (627ms)
+>>>>>>> Stashed changes
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
+			InitializePlatformSupportModulesInManaged (2ms)
 			SetLoadedEditorAssemblies (6ms)
+<<<<<<< Updated upstream
 			BeforeProcessingInitializeOnLoad (111ms)
 			ProcessInitializeOnLoadAttributes (446ms)
 			ProcessInitializeOnLoadMethodAttributes (117ms)
 			AfterProcessingInitializeOnLoad (2ms)
+=======
+			BeforeProcessingInitializeOnLoad (132ms)
+			ProcessInitializeOnLoadAttributes (390ms)
+			ProcessInitializeOnLoadMethodAttributes (89ms)
+			AfterProcessingInitializeOnLoad (8ms)
+>>>>>>> Stashed changes
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (7ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+<<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 1.42 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 215 Unused Serialized files (Serialized files now loaded: 0)
@@ -280,10 +405,259 @@ Received Import Request.
   artifactKey: Guid(62a343b20bf97544d86b7611238729f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Art/Hunter's Assets/pipe solid L/pile solid L.obj using Guid(62a343b20bf97544d86b7611238729f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '91d77b2ed341e5539c17e3f0cd61419f') in 0.0296546 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+=======
+Refreshing native plugins compatible for Editor in 2.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 215 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6470 unused Assets / (4.6 MB). Loaded Objects now: 7180.
+Memory consumption went from 171.0 MB to 166.4 MB.
+Total: 15.632600 ms (FindLiveObjects: 1.015600 ms CreateObjectMapping: 1.778800 ms MarkObjects: 8.523000 ms  DeleteObjects: 4.313500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 34654.848637 seconds.
+  path: Assets/Scenes/Main menu.unity
+  artifactKey: Guid(c79108e546af6ee4095d92fc4b19ed5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main menu.unity using Guid(c79108e546af6ee4095d92fc4b19ed5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '627f5deb650414e7a7a0e86344155f13') in 0.0075702 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.218398 seconds.
+  path: Assets/Scenes/First Level 1.unity
+  artifactKey: Guid(abd6a19cee74cff4ab48560e2b142345) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/First Level 1.unity using Guid(abd6a19cee74cff4ab48560e2b142345) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '89cce0854a1b0d3e69e0af880c16dae2') in 0.000589 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.784464 seconds.
+  path: Assets/Scenes/Hub.unity
+  artifactKey: Guid(abd6a19cee74cff4ab48560e2b142345) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hub.unity using Guid(abd6a19cee74cff4ab48560e2b142345) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eb57b2dabe5e7cf5c92d57b7c9cde092') in 0.0005736 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.059699 seconds.
+  path: Assets/Scenes/Second Level.unity
+  artifactKey: Guid(3ef8545ab81efcf4f8d9db6ef55d71e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Second Level.unity using Guid(3ef8545ab81efcf4f8d9db6ef55d71e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '409992a4bd5c3889460d36f237262543') in 0.0008979 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.966270 seconds.
+  path: Assets/Scenes/Second Level 1.unity
+  artifactKey: Guid(1a39b729049fa4a49930b6e6477fc3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Second Level 1.unity using Guid(1a39b729049fa4a49930b6e6477fc3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd00c0049eb856fe655ef8837a6d5018d') in 0.000608 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.461163 seconds.
+  path: Assets/Scenes/Hub.unity
+  artifactKey: Guid(1a39b729049fa4a49930b6e6477fc3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Hub.unity using Guid(1a39b729049fa4a49930b6e6477fc3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '402dc4d4d61a006ec43ff3eaa16e2a59') in 0.0006792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 404.902869 seconds.
+  path: Assets/Art/Hunter's Assets/Raw/Caltwalk
+  artifactKey: Guid(0b8efd6d649794546bc8629e67436034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Raw/Caltwalk using Guid(0b8efd6d649794546bc8629e67436034) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cba54db8236561906dc3b57e8538a3c3') in 0.0007472 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.842664 seconds.
+  path: Assets/Art/Hunter's Assets/Raw/Caltwalk/Catwalk
+  artifactKey: Guid(ee7b3903b5f83cc45ad450fc582f8283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Raw/Caltwalk/Catwalk using Guid(ee7b3903b5f83cc45ad450fc582f8283) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '387a2a0e054ef1410b91141e54171420') in 0.0006672 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.311814 seconds.
+  path: Assets/Art/Hunter's Assets/Raw/large computer
+  artifactKey: Guid(c01d91c5647b1d742bc53e2af90da058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Raw/large computer using Guid(c01d91c5647b1d742bc53e2af90da058) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cfea6609b667fa6b5199236b72591f34') in 0.0005875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.702649 seconds.
+  path: Assets/Art/Hunter's Assets/Raw/large computer 1
+  artifactKey: Guid(92ae4d60b9487784798f1c9970e585bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Raw/large computer 1 using Guid(92ae4d60b9487784798f1c9970e585bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ce6f5e01d1040f88e70ed9748635bd8c') in 0.0005871 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.453905 seconds.
+  path: Assets/Art/Hunter's Assets/Raw/Large computer Buttons
+  artifactKey: Guid(aa710c0171f31a248943abe2ad83f5d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Raw/Large computer Buttons using Guid(aa710c0171f31a248943abe2ad83f5d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '429b9f9e63f8ed84e83f30d57bb18ad3') in 0.0006804 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.347802 seconds.
+  path: Assets/Art/Hunter's Assets/Raw/Large computer Buttons 1
+  artifactKey: Guid(30018ac4f1f5f7345b6d605c42f707f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Raw/Large computer Buttons 1 using Guid(30018ac4f1f5f7345b6d605c42f707f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '20dc9344b5e19b9477374946a236394f') in 0.0005906 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.281740 seconds.
+  path: Assets/Art/Hunter's Assets/Raw/Pile hole
+  artifactKey: Guid(c96ca19388958e84a848f587aa3e7376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Raw/Pile hole using Guid(c96ca19388958e84a848f587aa3e7376) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '133495d339533200422eef29a8583068') in 0.0005859 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.328018 seconds.
+  path: Assets/Art/Hunter's Assets/Raw/Pile Solid
+  artifactKey: Guid(43a41c519a4976f4180d6b96a2045036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Raw/Pile Solid using Guid(43a41c519a4976f4180d6b96a2045036) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cadfe23c30c47fbb5a78c8837dc6d015') in 0.0005982 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.826180 seconds.
+  path: Assets/Art/Hunter's Assets/Raw/pipe solid L
+  artifactKey: Guid(6a24b4a0d63ccc6409ab8b4ef82e52ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Raw/pipe solid L using Guid(6a24b4a0d63ccc6409ab8b4ef82e52ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '64f43300346522704a344587200ebd82') in 0.0007641 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.422511 seconds.
+  path: Assets/Art/Hunter's Assets/Raw/pipe hollow L
+  artifactKey: Guid(f00a2c1a15964e54eafa80a81026e358) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Raw/pipe hollow L using Guid(f00a2c1a15964e54eafa80a81026e358) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5f324705250caa700b9486947f5e23dc') in 0.0007433 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.250464 seconds.
+  path: Assets/Art/Hunter's Assets/Raw/Button 1
+  artifactKey: Guid(ba13e7976ef2d514c900b7d4e286f934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Raw/Button 1 using Guid(ba13e7976ef2d514c900b7d4e286f934) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9c3d555edfefd63930a6e0c20f1a76c3') in 0.0007958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.031909 seconds.
+  path: Assets/Art/Hunter's Assets/Raw/Button
+  artifactKey: Guid(3504172a354904445b442d5be9938339) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Raw/Button using Guid(3504172a354904445b442d5be9938339) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9f55f252b5c7d68a136d0bdec79000f3') in 0.0005824 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.735875 seconds.
+  path: Assets/Art/Hunter's Assets/Raw/Floor hole
+  artifactKey: Guid(95c888202f03ec24db71628973c1e2af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Raw/Floor hole using Guid(95c888202f03ec24db71628973c1e2af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd61880918f1a577449be3e9096877c00') in 0.0006228 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.595683 seconds.
+  path: Assets/Art/Hunter's Assets/Raw/Floor Broken
+  artifactKey: Guid(df14048d6348b7f4ab3500b20cb5d6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Raw/Floor Broken using Guid(df14048d6348b7f4ab3500b20cb5d6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '535cb1c34cdbc3c4335fcf69799aea9e') in 0.0011373 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.440767 seconds.
+  path: Assets/Art/Hunter's Assets/Raw/floor
+  artifactKey: Guid(c30c81643869ba448ae51f8437dbfea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Raw/floor using Guid(c30c81643869ba448ae51f8437dbfea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'daec375e8825fb2676761f7ae44788b3') in 0.0008106 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.803889 seconds.
+  path: Assets/Art/Hunter's Assets/Raw/timer
+  artifactKey: Guid(c769f36f56ce59b409c1e150a6aac89e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Raw/timer using Guid(c769f36f56ce59b409c1e150a6aac89e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f4bef846333b23d348b15a6703d6262c') in 0.0005731 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.554672 seconds.
+  path: Assets/Art/Hunter's Assets/Raw/Projector
+  artifactKey: Guid(df03a1c9f616c754995db7fa7073208c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Raw/Projector using Guid(df03a1c9f616c754995db7fa7073208c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c51627c576c8f3e4898f65cce84558cf') in 0.0008062 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.091362 seconds.
+  path: Assets/Art/Hunter's Assets/Raw/Glass
+  artifactKey: Guid(c2b00e652544ca2489871c74cf812bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Raw/Glass using Guid(c2b00e652544ca2489871c74cf812bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c0321cda85b3cb7d79f9f453a64903e0') in 0.0007138 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.361564 seconds.
+  path: Assets/Art/Hunter's Assets/Raw/computer 1
+  artifactKey: Guid(4f2a5a5af7b7456428bcf229ad9a7993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Raw/computer 1 using Guid(4f2a5a5af7b7456428bcf229ad9a7993) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5cad65165af8137915884e606b796306') in 0.0008917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.707143 seconds.
+  path: Assets/Art/Hunter's Assets/Raw/Carpet
+  artifactKey: Guid(d022e10fa8945be4aa6ca8c4caa9c1c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Raw/Carpet using Guid(d022e10fa8945be4aa6ca8c4caa9c1c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4516d38784390bcdee5b1135fdec5e71') in 0.0005517 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.367004 seconds.
+  path: Assets/Art/Hunter's Assets/Projector
+  artifactKey: Guid(bb1cc38fd45f03c4b9ddaed2e16f6ff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Projector using Guid(bb1cc38fd45f03c4b9ddaed2e16f6ff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '64e511b0c4b3add4469f441b2108382b') in 0.0005896 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.218702 seconds.
+  path: Assets/Art/Hunter's Assets/Projector/New Material.mat
+  artifactKey: Guid(17d555bab7670ff44b0ce04be246c8a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Projector/New Material.mat using Guid(17d555bab7670ff44b0ce04be246c8a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4084d28d795b315a06c08f5f1c98f9d2') in 0.5824655 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Art/Hunter's Assets/Projector/Projector_standardSurface2_MaskMap_Raw.1001.png
+  artifactKey: Guid(55f70c555e1f56f46913de22abf9d8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Projector/Projector_standardSurface2_MaskMap_Raw.1001.png using Guid(55f70c555e1f56f46913de22abf9d8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '78176d0b6bb26166c1f5ef2b475adc72') in 0.0200885 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Art/Hunter's Assets/Projector/Projector_standardSurface2_Emissive_sRGB.1001.png
+  artifactKey: Guid(23639f79edea82a409758fe8ea3ecb9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Projector/Projector_standardSurface2_Emissive_sRGB.1001.png using Guid(23639f79edea82a409758fe8ea3ecb9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b1d5ca7d0878dec4a270b529dee8e8ce') in 0.0056577 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+>>>>>>> Stashed changes
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000025 seconds.
+<<<<<<< Updated upstream
   path: Assets/Resources/3D Rule Tiles/Materials/Brick Triplanar 1.mat
   artifactKey: Guid(94afa914a1a1a8545a67c29c4dd113ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Resources/3D Rule Tiles/Materials/Brick Triplanar 1.mat using Guid(94afa914a1a1a8545a67c29c4dd113ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ede764c2a8d7ed6c3db04d439f30bda5') in 0.0186585 seconds
@@ -323,6 +697,14 @@ Number of updated asset objects reloaded before import = 0Number of asset object
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+=======
+  path: Assets/Art/Hunter's Assets/Projector/Projector_standardSurface2_Normal_Raw.1001.png
+  artifactKey: Guid(57d0a566c3c84a74da362779da605e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Hunter's Assets/Projector/Projector_standardSurface2_Normal_Raw.1001.png using Guid(57d0a566c3c84a74da362779da605e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8dc127646e187a56edda8030e2bfd20c') in 0.0128182 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+>>>>>>> Stashed changes
 AssetImportWorker is now disconnected from the server
 Process exiting
 Exiting without the bug reporter. Application will terminate with return code 0
