@@ -3,7 +3,7 @@ using UnityEngine;
 public class TriggerObjectAtTime : MonoBehaviour
 {
     [SerializeField]
-    private GameObject thingToTrigger;
+    private GameObject[] thingToTrigger;
 
     [SerializeField]
     private float timeToTrigger;
@@ -24,8 +24,11 @@ public class TriggerObjectAtTime : MonoBehaviour
             if (canTrigger)
             {
                 canTrigger = false;
-                thingToTrigger.TryGetComponent(out IInteractable interactObj);
-                interactObj.Interact();
+                foreach (GameObject thing in thingToTrigger)
+                {
+                    thing.TryGetComponent(out IInteractable interactObj);
+                    interactObj.Interact();
+                }
             }
         }
         else

@@ -122,7 +122,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7a45289d1b50d7489c1f1e1134ce823, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  demo: 5
   destinationHeight: -3
   timeToMove: 1
 --- !u!1001 &1272481861160171174
@@ -192,6 +191,30 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: da3dd2c8b9418b74aa36fae834c63fb6, type: 3}
       propertyPath: m_Name
       value: Elevator_Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 8091132604151060672, guid: da3dd2c8b9418b74aa36fae834c63fb6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 8091132604151060672, guid: da3dd2c8b9418b74aa36fae834c63fb6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 8091132604151060672, guid: da3dd2c8b9418b74aa36fae834c63fb6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 8091132604151060672, guid: da3dd2c8b9418b74aa36fae834c63fb6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8091132604151060672, guid: da3dd2c8b9418b74aa36fae834c63fb6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.051
+      objectReference: {fileID: 0}
+    - target: {fileID: 8091132604151060672, guid: da3dd2c8b9418b74aa36fae834c63fb6, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

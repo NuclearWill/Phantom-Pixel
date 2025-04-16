@@ -114,7 +114,7 @@ public class Elevator : TimeBody, IInteractable
         transform.rotation = nextPoint.rotation;
 
         isMoving = nextPoint.isMoving;
-        movingTowardsOrigin = nextPoint.isAtStartingLocation;
+        movingTowardsOrigin = nextPoint.movingTowardsOrigin;
         elapsedTime = nextPoint.elapsedTime;
     }
 
