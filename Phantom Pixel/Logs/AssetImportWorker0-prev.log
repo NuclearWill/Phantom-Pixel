@@ -1,29 +1,29 @@
 Using pre-set license
 Built from '6000.0/staging' branch; Version is '6000.0.42f1 (feb9a7235030) revision 16693671'; Using compiler version '193933523'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 32698 MB
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 16244 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-D:\Unity Versions\6000.0.42f1\Editor\Unity.exe
+D:\Unity Installs\Unity 6000.0.42f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/Self Made Games/Unity Games/Phantom Pixel/Phantom-Pixel/Phantom Pixel
+D:/Github/Unity Projects/Phantom-Pixel/Phantom Pixel
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51023
+52796
 -job-worker-count
-5
+7
 -background-job-worker-count
 8
 -gc-helper-count
 1
-Successfully changed project path to: D:/Self Made Games/Unity Games/Phantom Pixel/Phantom-Pixel/Phantom Pixel
-D:/Self Made Games/Unity Games/Phantom Pixel/Phantom-Pixel/Phantom Pixel
+Successfully changed project path to: D:/Github/Unity Projects/Phantom-Pixel/Phantom Pixel
+D:/Github/Unity Projects/Phantom-Pixel/Phantom Pixel
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -59,17 +59,13 @@ D:/Self Made Games/Unity Games/Phantom Pixel/Phantom-Pixel/Phantom Pixel
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [24616]  Target information:
+Player connection [32372]  Target information:
 
-Player connection [24616]  * "[IP] 11.96.96.218 [Port] 0 [Flags] 2 [Guid] 1851167160 [EditorId] 1851167160 [Version] 1048832 [Id] WindowsEditor(7,MyDesktop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [32372]  * "[IP] 192.168.4.21 [Port] 0 [Flags] 2 [Guid] 2011335719 [EditorId] 2011335719 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FQ14130) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [24616]  * "[IP] 169.254.24.196 [Port] 0 [Flags] 2 [Guid] 1851167160 [EditorId] 1851167160 [Version] 1048832 [Id] WindowsEditor(7,MyDesktop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [24616]  * "[IP] 169.254.50.219 [Port] 0 [Flags] 2 [Guid] 1851167160 [EditorId] 1851167160 [Version] 1048832 [Id] WindowsEditor(7,MyDesktop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [24616] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [24616] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 5
+Player connection [32372] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [32372] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -80,59 +76,59 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 2.91 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.37 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.42f1 (feb9a7235030)
-[Subsystems] Discovering subsystems at path D:/Unity Versions/6000.0.42f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Self Made Games/Unity Games/Phantom Pixel/Phantom-Pixel/Phantom Pixel/Assets
+[Subsystems] Discovering subsystems at path D:/Unity Installs/Unity 6000.0.42f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Github/Unity Projects/Phantom-Pixel/Phantom Pixel/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
-    Vendor:   NVIDIA
-    VRAM:     5954 MB
-    Driver:   32.0.15.6094
+    Renderer: AMD Radeon RX 6800 XT (ID=0x73bf)
+    Vendor:   ATI
+    VRAM:     16312 MB
+    Driver:   32.0.12033.1030
 Initialize mono
-Mono path[0] = 'D:/Unity Versions/6000.0.42f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Unity Versions/6000.0.42f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'D:/Unity Versions/6000.0.42f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56724
+Mono path[0] = 'D:/Unity Installs/Unity 6000.0.42f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity Installs/Unity 6000.0.42f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity Installs/Unity 6000.0.42f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56248
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Unity Versions/6000.0.42f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004521 seconds.
-- Loaded All Assemblies, in  0.584 seconds
+Register platform support module: D:/Unity Installs/Unity 6000.0.42f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002123 seconds.
+- Loaded All Assemblies, in  0.493 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.481 seconds
-Domain Reload Profiling: 1064ms
-	BeginReloadAssembly (218ms)
+- Finished resetting the current domain, in  0.356 seconds
+Domain Reload Profiling: 849ms
+	BeginReloadAssembly (166ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (53ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (70ms)
-	LoadAllAssembliesAndSetupDomain (226ms)
-		LoadAssemblies (217ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (219ms)
+		LoadAssemblies (165ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (222ms)
-			TypeCache.Refresh (220ms)
-				TypeCache.ScanAssembly (202ms)
+		AnalyzeDomain (215ms)
+			TypeCache.Refresh (213ms)
+				TypeCache.ScanAssembly (198ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (482ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (357ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (430ms)
+		SetupLoadedEditorAssemblies (320ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (32ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (75ms)
-			ProcessInitializeOnLoadAttributes (225ms)
-			ProcessInitializeOnLoadMethodAttributes (92ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (58ms)
+			ProcessInitializeOnLoadAttributes (166ms)
+			ProcessInitializeOnLoadMethodAttributes (67ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -144,11 +140,11 @@ Import Worker Mode flag is 0x00
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.167 seconds
+- Loaded All Assemblies, in  0.995 seconds
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 1.69 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.79 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Package Manager log level set to [2]
@@ -156,68 +152,256 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.334 seconds
-Domain Reload Profiling: 2499ms
-	BeginReloadAssembly (270ms)
+- Finished resetting the current domain, in  1.089 seconds
+Domain Reload Profiling: 2083ms
+	BeginReloadAssembly (229ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (34ms)
+		CreateAndSetChildDomain (39ms)
 	RebuildCommonClasses (55ms)
 	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (56ms)
-	LoadAllAssembliesAndSetupDomain (766ms)
-		LoadAssemblies (557ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (651ms)
+		LoadAssemblies (442ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (389ms)
-			TypeCache.Refresh (285ms)
-				TypeCache.ScanAssembly (262ms)
-			BuildScriptInfoCaches (81ms)
-			ResolveRequiredComponents (19ms)
-	FinalizeReload (1335ms)
+		AnalyzeDomain (357ms)
+			TypeCache.Refresh (264ms)
+				TypeCache.ScanAssembly (239ms)
+			BuildScriptInfoCaches (74ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1090ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1093ms)
+		SetupLoadedEditorAssemblies (869ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (161ms)
-			ProcessInitializeOnLoadAttributes (782ms)
-			ProcessInitializeOnLoadMethodAttributes (135ms)
-			AfterProcessingInitializeOnLoad (4ms)
-			EditorAssembliesLoaded (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (149ms)
+			ProcessInitializeOnLoadAttributes (567ms)
+			ProcessInitializeOnLoadMethodAttributes (138ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (2ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 2.00 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.32 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 216 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6470 unused Assets / (4.2 MB). Loaded Objects now: 7183.
-Memory consumption went from 167.4 MB to 163.2 MB.
-Total: 11.687800 ms (FindLiveObjects: 0.911900 ms CreateObjectMapping: 0.521600 ms MarkObjects: 7.633300 ms  DeleteObjects: 2.619200 ms)
+Unloading 6470 unused Assets / (4.6 MB). Loaded Objects now: 7179.
+Memory consumption went from 169.1 MB to 164.5 MB.
+Total: 11.175100 ms (FindLiveObjects: 0.976000 ms CreateObjectMapping: 0.695200 ms MarkObjects: 5.510900 ms  DeleteObjects: 3.991400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 196026.244135 seconds.
-  path: Assets/Art/Jenna's Assets/window.fbx
-  artifactKey: Guid(83f3d903299237e42b6b49c240d65a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Jenna's Assets/window.fbx using Guid(83f3d903299237e42b6b49c240d65a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9a3a3871f3dcfad7af77e945f241393f') in 0.7453388 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+  Time since last request: 124439.297547 seconds.
+  path: Assets/Scenes/Second Level 1.unity
+  artifactKey: Guid(acdf84411a9b68d4aae4754d61326f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Second Level 1.unity using Guid(acdf84411a9b68d4aae4754d61326f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '74c1fd51410e4f73c5e2be3ca8a1268b') in 0.0057749 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.067392 seconds.
-  path: Assets/Art/Bernards Assets/Finished Models/Glass_Screen.prefab
-  artifactKey: Guid(bb83ee056afeab346b353ba6c759819c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Bernards Assets/Finished Models/Glass_Screen.prefab using Guid(bb83ee056afeab346b353ba6c759819c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dd16479d218881d7fb32bcee7339d897') in 0.0016353 seconds
+  Time since last request: 515.961476 seconds.
+  path: Assets/Resources/3D Rule Tiles/Rule Tiles/Grass Ground.prefab
+  artifactKey: Guid(4932bd56ef93d8b448f25aa184dbceda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Rule Tiles/Rule Tiles/Grass Ground.prefab using Guid(4932bd56ef93d8b448f25aa184dbceda) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b7627bf791e3dd0230ccd60d537a7a9e') in 0.5809555 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 128
+
+========================================================================
+Received Import Request.
+  Time since last request: 206.789660 seconds.
+  path: Assets/Scenes/Second Level 1.unity
+  artifactKey: Guid(acdf84411a9b68d4aae4754d61326f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Second Level 1.unity using Guid(acdf84411a9b68d4aae4754d61326f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0616d20a09f25fd9c34fa4efbfe59672') in 0.0007669 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.180884 seconds.
+  path: Assets/Prefabs/catwalk_Ready.prefab
+  artifactKey: Guid(ab2f96a89d078f24192240d07781751e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/catwalk_Ready.prefab using Guid(ab2f96a89d078f24192240d07781751e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '014c647dc69247948c4ab980660c3aab') in 0.0461092 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Prefabs/glass panel.prefab
+  artifactKey: Guid(ac7ad6aca907d2e4c89bf9fd7c44fad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/glass panel.prefab using Guid(ac7ad6aca907d2e4c89bf9fd7c44fad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0536d5c3ed90c9d5ecb87dcd576fc84a') in 0.0211642 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Prefabs/Roof.prefab
+  artifactKey: Guid(e0af5adceda64ca45b0d04772429db23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Roof.prefab using Guid(e0af5adceda64ca45b0d04772429db23) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1ececc73ea6a07d11ae83e33a44257da') in 0.0187073 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Prefabs/Staircase Tile.prefab
+  artifactKey: Guid(c40963ddf81737f4db570cc2135ac0a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Staircase Tile.prefab using Guid(c40963ddf81737f4db570cc2135ac0a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '959c77bb798bb7dd389dfafcc0509c85') in 0.0114579 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Prefabs/Elevator with Rail.prefab
+  artifactKey: Guid(f1f5d435ba0724641a4d0285e2b3aaab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Elevator with Rail.prefab using Guid(f1f5d435ba0724641a4d0285e2b3aaab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '88e6a203f9803ba1c4d6e91b34e90a52') in 0.1185744 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 108
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.114839 seconds.
+  path: Assets/Resources/3D Rule Tiles/Scriptable Objects/Brick TileRules.asset
+  artifactKey: Guid(aa28371436d672e4da6ef7020691b480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Rule Tiles/Scriptable Objects/Brick TileRules.asset using Guid(aa28371436d672e4da6ef7020691b480) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '17f09e0562787809f8a17bbb9681dca2') in 0.0116048 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 111
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Resources/3D Rule Tiles/Scriptable Objects/GrassTileRules.asset
+  artifactKey: Guid(25c8cf1f3eca29c42b1b9ee64c785593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Rule Tiles/Scriptable Objects/GrassTileRules.asset using Guid(25c8cf1f3eca29c42b1b9ee64c785593) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '53e73106086e6d671216651187a69e46') in 0.0096723 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 111
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Resources/3D Rule Tiles/Scriptable Objects/SandTileRules.asset
+  artifactKey: Guid(c2ee8e9413dd9bf448e8cf13a45d7b96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Rule Tiles/Scriptable Objects/SandTileRules.asset using Guid(c2ee8e9413dd9bf448e8cf13a45d7b96) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3bacaaa78ea1c9aaeda7418a3c56c3ea') in 0.0129755 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 111
+
+========================================================================
+Received Import Request.
+  Time since last request: 183.072304 seconds.
+  path: Assets/Resources/3D Rule Tiles/Rendering/New Universal Render Pipeline Asset_Renderer.asset
+  artifactKey: Guid(909c5fb2c1dc7d7479013166dbacf5c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Rule Tiles/Rendering/New Universal Render Pipeline Asset_Renderer.asset using Guid(909c5fb2c1dc7d7479013166dbacf5c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '416b6cacedc765e65c2b77b3177a6868') in 0.0032103 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Resources/3D Rule Tiles/Rendering/UniversalRenderPipelineGlobalSettings.asset
+  artifactKey: Guid(4ac447a51dc35f94a98bf6bedd24a6e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Rule Tiles/Rendering/UniversalRenderPipelineGlobalSettings.asset using Guid(4ac447a51dc35f94a98bf6bedd24a6e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd9011ec7e0358798cdb89101d5751fb7') in 0.0011672 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.630546 seconds.
+  path: Assets/Resources/3D Rule Tiles/Models/Railing.obj
+  artifactKey: Guid(8b30ddf6be62c404c961ed3a27630888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Rule Tiles/Models/Railing.obj using Guid(8b30ddf6be62c404c961ed3a27630888) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dde0406988fd7d028d4b1aac49882fec') in 0.0765154 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Resources/3D Rule Tiles/Models/Stair Collider.obj
+  artifactKey: Guid(e3ea40b71a67c0847b2ba1bd5c1eea45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Rule Tiles/Models/Stair Collider.obj using Guid(e3ea40b71a67c0847b2ba1bd5c1eea45) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4330816810d33db0a63e5fc21356fd64') in 0.0305386 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Resources/3D Rule Tiles/Models/Subdivided Plane.obj
+  artifactKey: Guid(c3dba9c60e9039c4189b009fb5863c05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Rule Tiles/Models/Subdivided Plane.obj using Guid(c3dba9c60e9039c4189b009fb5863c05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5e6770baec55cc8f586517706542bd2e') in 0.0257287 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000030 seconds.
-  path: Assets/Art/Bernards Assets/Finished Models/Wall_Block.prefab
-  artifactKey: Guid(590cb9d06b4d16745b2d82faacadd406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Bernards Assets/Finished Models/Wall_Block.prefab using Guid(590cb9d06b4d16745b2d82faacadd406) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3b490159a3920b44310c3e264d1debc9') in 0.0013286 seconds
+  path: Assets/Resources/3D Rule Tiles/Models/Stair Tile.obj
+  artifactKey: Guid(ffa17144c9ca5f645920fb804fc7e14b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Rule Tiles/Models/Stair Tile.obj using Guid(ffa17144c9ca5f645920fb804fc7e14b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a31c8c42bdad739c1aba50a226f78f77') in 0.0290332 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.106348 seconds.
+  path: Assets/Resources/3D Rule Tiles/Object TIles/Railing.prefab
+  artifactKey: Guid(0ef4e978cf051da4ea1d6852bddc315a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Rule Tiles/Object TIles/Railing.prefab using Guid(0ef4e978cf051da4ea1d6852bddc315a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e70410f52d1d1de6c154e811f5f5a260') in 0.0176709 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/3D Rule Tiles/Object TIles/water with collider.prefab
+  artifactKey: Guid(6abd44a8061a40e4a93ad821928cefca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Rule Tiles/Object TIles/water with collider.prefab using Guid(6abd44a8061a40e4a93ad821928cefca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '68e11679b1b50d3064a0740791414b38') in 0.0194222 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Resources/3D Rule Tiles/Object TIles/water no collider.prefab
+  artifactKey: Guid(e158ea314820698429e0e782cce2c9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Rule Tiles/Object TIles/water no collider.prefab using Guid(e158ea314820698429e0e782cce2c9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '075e912d8cab66e0ca895e61fa05feef') in 0.0174275 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Resources/3D Rule Tiles/Object TIles/Stair Tile.prefab
+  artifactKey: Guid(55ae7c52220776e49ae1c4f2c00b1abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/3D Rule Tiles/Object TIles/Stair Tile.prefab using Guid(55ae7c52220776e49ae1c4f2c00b1abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '19adbaa9cf77961f19b02474c60f3a8b') in 0.0173093 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 70.694429 seconds.
+  path: Assets/Art/Bernards Assets/Finished Models/Glass_Screen.prefab
+  artifactKey: Guid(bb83ee056afeab346b353ba6c759819c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Bernards Assets/Finished Models/Glass_Screen.prefab using Guid(bb83ee056afeab346b353ba6c759819c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dd16479d218881d7fb32bcee7339d897') in 0.0023048 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Art/Bernards Assets/Finished Models/Wall_Block.prefab
+  artifactKey: Guid(590cb9d06b4d16745b2d82faacadd406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Bernards Assets/Finished Models/Wall_Block.prefab using Guid(590cb9d06b4d16745b2d82faacadd406) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3b490159a3920b44310c3e264d1debc9') in 0.0014545 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Art/Bernards Assets/Finished Models/Stairs.prefab
+  artifactKey: Guid(cf89b9922dbe3494b816fbce4d96649f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Bernards Assets/Finished Models/Stairs.prefab using Guid(cf89b9922dbe3494b816fbce4d96649f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '565b6c2cdeac126127fa676293abdcc0') in 0.0014079 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Art/Bernards Assets/Finished Models/Wall_Block_Striped.prefab
+  artifactKey: Guid(efce2e71cb1aae14688ee41a29813cf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Bernards Assets/Finished Models/Wall_Block_Striped.prefab using Guid(efce2e71cb1aae14688ee41a29813cf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cd43a71605e2194f35704e30630eb5b9') in 0.0010744 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.743517 seconds.
+  path: Assets/Art/Bernards Assets/Models/Wall_Block.fbx
+  artifactKey: Guid(ff7dcbe964675254fa44da5043bde276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Bernards Assets/Models/Wall_Block.fbx using Guid(ff7dcbe964675254fa44da5043bde276) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dc46f7b1e375653e6ca49ad623de9564') in 0.0459749 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
