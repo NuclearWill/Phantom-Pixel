@@ -53,14 +53,33 @@ public class WaterPIT : PointInTime
 {
     public float waterLevel, elapsedTime;
 
-    public bool isMoving, movingTowardsOrigin;
+    public bool isMoving;
 
-    public WaterPIT(float waterLevel, bool isMoving, bool movingTowardsOrigin, float elapsedTime)
+    public WaterPIT(float waterLevel, bool isMoving, float elapsedTime)
     {
         this.waterLevel = waterLevel;
         this.isMoving = isMoving;
-        this.movingTowardsOrigin = movingTowardsOrigin;
         this.elapsedTime = elapsedTime;
+    }
+}
+
+public class WaterLevelPIT : WaterPIT
+{
+    public bool movingTowardsOrigin;
+
+    public WaterLevelPIT(float waterLevel, bool isMoving, bool movingTowardsOrigin, float elapsedTime) : base(waterLevel, isMoving, elapsedTime)
+    {
+        this.movingTowardsOrigin = movingTowardsOrigin;
+    }
+}
+
+public class WaterFloodPIT : WaterPIT
+{
+    public float timeUntilNextFall;
+
+    public WaterFloodPIT(float waterLevel, bool isMoving, float timeUntilNextFall, float elapsedTime) : base (waterLevel, isMoving, elapsedTime)
+    {
+        this.timeUntilNextFall = timeUntilNextFall;
     }
 }
 
