@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float timeToMove = 0.2f;
     [SerializeField]
-    private float moveDistance = 2f, raycastDistance = 1.4f, turnSpeed = 10f;
+    private float moveDistance = 2f, raycastDistance = 1.4f, raycastStairOffset = 0.5f, turnSpeed = 10f;
 
     [Header("Input Action Reference")]
     public InputSystem_Actions playerControls;
@@ -75,13 +75,19 @@ public class PlayerMovement : MonoBehaviour
                         else
                             walkingDownStair = true;
 
-                        StartCoroutine(MovePlayer(moveDirection)); // starts the function to move the player to the next tile
+                        if (checkFloor())
+                            StartCoroutine(MovePlayer(moveDirection)); // starts the function to move the player to the next tile
+
+                        // resets variables
+                        walkingUpStair = false;
+                        walkingDownStair = false;
                     }
                 }
 
                 // ensures that the tile the player is attempting to move to is valid with no wall to block it and a floor below to stand on
-                else if (checkWall() && checkFloor())
-                    StartCoroutine(MovePlayer(moveDirection)); // starts the function to move the player to the next tile
+                else if (checkWall())
+                    if (walkingUpStair || checkFloor())
+                        StartCoroutine(MovePlayer(moveDirection)); // starts the function to move the player to the next tile
             }
         }
     }
@@ -202,7 +208,19 @@ public class PlayerMovement : MonoBehaviour
 
     bool checkFloor()
     {
-        bool struckSomething = Physics.Raycast(transform.position + moveDirection * 2f, Vector3.down, out RaycastHit hit, raycastDistance);
+        Vector3 raycastOrigin = transform.position;
+
+        // changes the origating point of the raycast depending on if the player is trying to go upstairs or downstairs while on a staircase
+        if (onStair)
+        {
+            if (walkingUpStair)
+                raycastOrigin += new Vector3(0, raycastStairOffset, 0);
+
+            else if (walkingDownStair)
+                raycastOrigin -= new Vector3(0, raycastStairOffset, 0);
+        }
+        
+        bool struckSomething = Physics.Raycast(raycastOrigin + (moveDirection * 2f), Vector3.down, out RaycastHit hit, raycastDistance);
 
         if (struckSomething)
         {
@@ -238,14 +256,14 @@ public class PlayerMovement : MonoBehaviour
     private int compareStairToPlayer(float staircaseRot)
     {
         //north and south input directions
-        if (Mathf.Abs(moveDirection.x) == 1)
+        if (moveDirection.x != 0)
         {
             // if the movement direction is going towards the oriantation of the stairs, the player goes up
             if (Mathf.Sin(stairRot) == moveDirection.x)
                 return 1;
 
             // if the movement direction is going away from the oriantaion of the stairs, the player goes down
-            else if (Mathf.Sin(stairRot) == moveDirection.x * -1)
+            else if (Mathf.Sin(stairRot) == -moveDirection.x)
                 return -1;
 
             // if neither, the movement direction is invalid
