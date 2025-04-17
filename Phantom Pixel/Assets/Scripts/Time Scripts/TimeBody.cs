@@ -10,7 +10,7 @@ interface IInteractable
 
 public abstract class TimeBody : MonoBehaviour
 {
-    public const float recordTime = 20f;
+    public const float recordTime = 30f;
 
     List<PointInTime> history;
 
