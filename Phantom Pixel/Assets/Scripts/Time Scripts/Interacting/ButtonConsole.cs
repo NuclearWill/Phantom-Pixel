@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class ButtonConsole : TimeBody, IInteractable
@@ -9,26 +10,24 @@ public class ButtonConsole : TimeBody, IInteractable
     [SerializeField]
     [Tooltip("The delay each object should wait before activating after the button is pressed")]
     private float[] triggerDelay;
-    [SerializeField]
-    private bool canReTrigger = false;
 
+    [NonSerialized]
     private bool[] objectTriggered;
 
-    private bool activated = false;
+    [NonSerialized]
+    public bool activated = false;
+    [NonSerialized]
     private float timeActivated;
 
     private void Start()
     {
         objectTriggered = new bool[thingsToTrigger.Length];
 
-
         for (int i = 0; i < thingsToTrigger.Length; i++)
-        {
             objectTriggered[i] = false;
-        }
     }
 
-    void Update()
+    private void Update()
     {
         // if the button has been activated, waits until each object's delay has passed before triggering them
         if (activated) 
@@ -44,7 +43,7 @@ public class ButtonConsole : TimeBody, IInteractable
             }
     }
 
-    public void Interact()
+    public virtual void Interact()
     {
         if (!activated)
         {
@@ -59,6 +58,7 @@ public class ButtonConsole : TimeBody, IInteractable
     {
         ButtonPIT nextPoint = (ButtonPIT)PIT;
 
+        Debug.Log(this.name + " " + activated);
         activated = nextPoint.isActivated;
         objectTriggered = nextPoint.objectTriggered;
     }

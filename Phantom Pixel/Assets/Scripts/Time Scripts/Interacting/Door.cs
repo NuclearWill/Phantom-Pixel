@@ -17,7 +17,7 @@ public class Door : TimeBody, IInteractable
 
     public void Interact()
     {
-        if (open)
+        if (startingPosition)
             CloseDoor();
         else
             OpenDoor();
