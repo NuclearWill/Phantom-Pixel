@@ -3,20 +3,10 @@ using UnityEngine;
 public class TriggerObjectAtTime : MonoBehaviour
 {
     [SerializeField]
-    private GameObject[] thingToTrigger;
-
-    [SerializeField]
     private float timeToTrigger;
 
     private bool canTrigger = true;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (TimeManager.GetGameTime() >= timeToTrigger)
@@ -24,11 +14,9 @@ public class TriggerObjectAtTime : MonoBehaviour
             if (canTrigger)
             {
                 canTrigger = false;
-                foreach (GameObject thing in thingToTrigger)
-                {
-                    thing.TryGetComponent(out IInteractable interactObj);
+                
+                if (TryGetComponent(out IInteractable interactObj))
                     interactObj.Interact();
-                }
             }
         }
         else
