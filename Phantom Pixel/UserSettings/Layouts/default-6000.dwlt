@@ -5865,7 +5865,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 1afbffff
+      m_ExpandedIDs: dae7ffff1afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -6553,9 +6553,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -2.0415323, y: 18.827679, z: 4.467525}
+    m_Target: {x: -2.0004742, y: 20.121899, z: 3.5011961}
     speed: 2
-    m_Value: {x: -2.0415323, y: 18.827679, z: 4.467525}
+    m_Value: {x: -2.0004742, y: 20.121899, z: 3.5011961}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -6601,13 +6601,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.1489782, y: 0.38174176, z: -0.06275332, w: 0.91039115}
+    m_Target: {x: 0.15003541, y: 0.12529777, z: -0.019385636, w: 0.98086655}
     speed: 2
-    m_Value: {x: 0.14902215, y: 0.3802481, z: -0.0625088, w: 0.91065705}
+    m_Value: {x: 0.15142512, y: 0.12669595, z: -0.019794276, w: 0.9801157}
   m_Size:
-    m_Target: 1.9257171
+    m_Target: 2.1250978
     speed: 2
-    m_Value: 1.9235634
+    m_Value: 2.1233249
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -6741,9 +6741,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 127}
-    m_SelectedIDs: 9cc40000
-    m_LastClickedID: 50332
-    m_ExpandedIDs: 00000000eac30000ecc30000eec30000f0c30000f2c30000f4c30000f6c30000f8c30000fac30000fcc3000000ca9a3b
+    m_SelectedIDs: c4c40000
+    m_LastClickedID: 50372
+    m_ExpandedIDs: 00000000f0c30000f2c30000f4c30000f6c30000f8c30000fac30000fcc30000fec3000000c4000002c4000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -6772,7 +6772,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000eac30000ecc30000eec30000f0c30000f2c30000f4c30000f6c30000f8c30000fac30000fcc30000
+    m_ExpandedIDs: 00000000f0c30000f2c30000f4c30000f6c30000f8c30000fac30000fcc30000fec3000000c4000002c40000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
