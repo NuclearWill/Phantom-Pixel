@@ -30,8 +30,6 @@ public class PlayerInteract : MonoBehaviour
     {
         if (interact.WasPressedThisFrame())
         {
-            Debug.Log("I am attempting to press a button");
-
             // shoots a ray out from where the player is facing, contining if it hits something
             if (Physics.Raycast(transform.position, transform.forward * rayDistance, out RaycastHit hit))
             {

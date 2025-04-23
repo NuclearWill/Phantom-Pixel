@@ -76,10 +76,12 @@ public class WaterLevelPIT : WaterPIT
 public class WaterFloodPIT : WaterPIT
 {
     public float timeUntilNextFall;
+    public int fillCounter;
 
-    public WaterFloodPIT(float waterLevel, bool isMoving, float timeUntilNextFall, float elapsedTime) : base (waterLevel, isMoving, elapsedTime)
+    public WaterFloodPIT(float waterLevel, bool isMoving, float timeUntilNextFall, int fillCounter, float elapsedTime) : base (waterLevel, isMoving, elapsedTime)
     {
         this.timeUntilNextFall = timeUntilNextFall;
+        this.fillCounter = fillCounter;
     }
 }
 

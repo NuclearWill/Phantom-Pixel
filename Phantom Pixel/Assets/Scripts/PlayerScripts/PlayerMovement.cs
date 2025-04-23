@@ -75,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
                         else
                             walkingDownStair = true;
 
-                        if (checkFloor())
+                        if (checkFloor() && checkWall())
                             StartCoroutine(MovePlayer(moveDirection)); // starts the function to move the player to the next tile
 
                         // resets variables
@@ -180,10 +180,18 @@ public class PlayerMovement : MonoBehaviour
 
     bool checkWall()
     {
-        // shoots the raycast to check for walls slightly higher than the center of the character. Helps with stairs
-        Vector3 wallCheckPosition = transform.position + new Vector3(0, 0.2f, 0);
+        Vector3 raycastOrigin = transform.position;
 
-        bool struckSomething = Physics.Raycast(wallCheckPosition, moveDirection, out RaycastHit hit, raycastDistance);
+        if (onStair)
+        {
+            if (walkingUpStair)
+                raycastOrigin += new Vector3(0, raycastStairOffset, 0);
+
+            else if (walkingDownStair)
+                raycastOrigin -= new Vector3(0, raycastStairOffset, 0);
+        }
+
+        bool struckSomething = Physics.Raycast(raycastOrigin, moveDirection, out RaycastHit hit, raycastDistance);
         if (struckSomething)
         {
             if (hit.transform.CompareTag("Stair"))

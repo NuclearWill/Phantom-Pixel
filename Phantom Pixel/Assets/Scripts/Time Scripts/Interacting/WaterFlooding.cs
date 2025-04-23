@@ -10,12 +10,14 @@ public class WaterFlooding : Water
     [SerializeField]
     [Tooltip("The time before the water fills up again")]
     private float fillDelay = 4f;
+    [SerializeField]
+    private bool selfTrigger = true;
 
     // internal variables
     private float timeUntilNextFill;
 
     // calculates the number of times the water level has risen
-    private int fillCounter => (int) Mathf.Floor(TimeManager.GetGameTime() / fillDelay);
+    private int fillCounter = 0;
     
     // calculates the corrent starting height based off the number of times the water has risen
     private float startHeightCalc => initialWaterLevel + (fillAmount * (fillCounter - 1));
@@ -32,16 +34,15 @@ public class WaterFlooding : Water
 
     private void Update()
     {
-        // passively begins flooding the room except while time is rewinding
-        if (TimeManager.GetGameTime() > timeUntilNextFill && !TimeManager.isRewinding())
-        {
-            timeUntilNextFill += fillDelay;
+        // if self trigger is active, the water will automatically flood itself at periodic times
+        if (selfTrigger)
+            // passively begins flooding the room except while time is rewinding
+            if (TimeManager.GetGameTime() > timeUntilNextFill && !TimeManager.isRewinding())
+            {
+                timeUntilNextFill += fillDelay;
 
-            // sets the water up to begin rising
-            Debug.Log("water level rising");
-            elapsedTime = 0f;
-            isMoving = true;
-        }
+                Interact();
+            }
 
         // only changes the water if time is not rewinding or paused, and if the water is supposed to be changing
         if (isMoving && !TimeManager.isRewinding() && !TimeManager.isPaused())
@@ -55,9 +56,12 @@ public class WaterFlooding : Water
 
     public override void Interact()
     {
-        // beat the level
-        Debug.Log("You Win!");
-        SceneManager.LoadScene(0);
+        // sets the water up to begin rising
+        Debug.Log("water level rising");
+
+        elapsedTime = 0f;
+        isMoving = true;
+        fillCounter++;
     }
 
     public override void ApplyRewindData(PointInTime PIT)
@@ -67,10 +71,12 @@ public class WaterFlooding : Water
         WaterFloodPIT nextPoint = (WaterFloodPIT)PIT;
 
         timeUntilNextFill = nextPoint.timeUntilNextFall;
+
+        fillCounter = nextPoint.fillCounter;
     }
 
     public override PointInTime CreatePIT()
     {
-        return new WaterFloodPIT(waterLevel, isMoving, timeUntilNextFill, elapsedTime);
+        return new WaterFloodPIT(waterLevel, isMoving, timeUntilNextFill, fillCounter, elapsedTime);
     }
 }
