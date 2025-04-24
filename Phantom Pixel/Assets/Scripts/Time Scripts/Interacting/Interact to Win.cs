@@ -9,6 +9,7 @@ public class InteracttoWin : MonoBehaviour, IInteractable
     {
         // beat the level
         Debug.Log("You Win!");
+        LevelManager.completeLevel(2);
         SceneManager.LoadScene(0);
     }
 }
