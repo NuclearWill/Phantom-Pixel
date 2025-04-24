@@ -1,8 +1,13 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+    public TextMeshProUGUI speakertext;
+    public TextMeshProUGUI dialoguetext;
+    
     private Queue<string> sentences;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -21,6 +26,8 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         Debug.Log("Starting Message with " + dialogue.speaker);
+
+        speakertext.text = dialogue.speaker;
         
         sentences.Clear();
 
@@ -41,6 +48,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
+        dialoguetext.text = sentence;
         Debug.Log(sentence);
     }
 
