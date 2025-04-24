@@ -59,7 +59,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Foam_Distance: 0.5
+    - _Foam_Distance: 0.25
     - _Foam_Strength: 2.39
     - _NormalIntensity: 1
     - _NormalScale: 0.15
@@ -70,10 +70,10 @@ Material:
     - _Smoothness: 1
     - _Speed: 0.05
     - _WaveScale: 0.2
-    - _WaveStrength: 0.2
+    - _WaveStrength: 0.02
     - _Wave_Direction: 135
     m_Colors:
-    - _Color: {r: 0, g: 0.7276969, b: 1, a: 0.8}
+    - _Color: {r: 0, g: 0.7276969, b: 1, a: 0.3254902}
     - _Foam_Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
