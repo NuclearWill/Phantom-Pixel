@@ -18322,7 +18322,6 @@ MonoBehaviour:
   masterMouseSensitivity: 3
   horizontalMouseSensitivity: 3
   verticalMouseSensitivity: 1
-  orbitRadius: 20
   maxHeight: 20
   minHeight: 8
   startingHeight: 20

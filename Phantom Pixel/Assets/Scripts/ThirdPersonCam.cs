@@ -14,8 +14,6 @@ public class ThirdPersonCam : MonoBehaviour
     [SerializeField]
     float verticalMouseSensitivity = 1f;
     [SerializeField]
-    float orbitRadius = 20f;
-    [SerializeField]
     [Tooltip("The total height in units the camera can ascend")]
     float maxHeight = 10f;
     [SerializeField]

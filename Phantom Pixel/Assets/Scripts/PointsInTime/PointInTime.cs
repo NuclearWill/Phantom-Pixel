@@ -6,13 +6,23 @@ public class PointInTime
 
 }
 
-public class MovingPIT : PointInTime
+public class DynamicPIT : PointInTime
+{
+    public bool isMoving;
+
+    public DynamicPIT(bool isMoving)
+    {
+        this.isMoving = isMoving;
+    }
+}
+
+public class MovingPIT : DynamicPIT
 {
     // positional data
     public Vector3 position;
     public Quaternion rotation;
 
-    public MovingPIT(Transform transform)
+    public MovingPIT(bool isMoving, Transform transform) : base(isMoving)
     {
         this.position = transform.position;
         this.rotation = transform.rotation;
@@ -22,12 +32,11 @@ public class MovingPIT : PointInTime
 public class ElevatorPIT : MovingPIT
 {
     // elevator specific data
-    public bool isMoving, movingTowardsOrigin;
+    public bool movingTowardsOrigin;
     public float elapsedTime;
 
-    public ElevatorPIT(Transform transform, bool moving, bool movingTowardsOrigin, float elapsedTime) : base(transform)
+    public ElevatorPIT(Transform transform, bool isMoving, bool movingTowardsOrigin, float elapsedTime) : base(isMoving, transform)
     {
-        this.isMoving = moving;
         this.movingTowardsOrigin = movingTowardsOrigin;
         this.elapsedTime = elapsedTime;
     }
@@ -49,16 +58,13 @@ public class ButtonPIT : PointInTime
     }
 }
 
-public class WaterPIT : PointInTime
+public class WaterPIT : DynamicPIT
 {
     public float waterLevel, elapsedTime;
 
-    public bool isMoving;
-
-    public WaterPIT(float waterLevel, bool isMoving, float elapsedTime)
+    public WaterPIT(float waterLevel, bool isMoving, float elapsedTime) : base(isMoving)
     {
         this.waterLevel = waterLevel;
-        this.isMoving = isMoving;
         this.elapsedTime = elapsedTime;
     }
 }

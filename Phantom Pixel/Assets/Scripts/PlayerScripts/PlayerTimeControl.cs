@@ -35,13 +35,14 @@ public class PlayerTimeControl : MonoBehaviour
     {
         if (!GetComponent<PlayerMovement>().getIsMoving())
         {
-            // reverse time controls
+            // rewind time controls
             if (rewind.WasPressedThisFrame())
             {
                 Debug.Log("Begin Reversing Time");
                 TimeManager.BeginReverseTime();
             }
-            if (rewind.WasReleasedThisFrame())
+            // only triggers if the player is rewinding time and tries to stop
+            if (rewind.WasReleasedThisFrame() && TimeManager.isRewinding())
             {
                 Debug.Log("Stop Reversing Time");
                 TimeManager.StopReversingTime();

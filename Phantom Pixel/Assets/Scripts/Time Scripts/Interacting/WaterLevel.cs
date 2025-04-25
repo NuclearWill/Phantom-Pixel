@@ -20,7 +20,7 @@ public class WaterLevel : Water
     {
         
         // only changes the water if time is not rewinding or paused, and if the water is supposed to be changing
-        if (isMoving && !TimeManager.isRewinding() && !TimeManager.isPaused())
+        if (getMoving() && !TimeManager.isRewinding() && !TimeManager.isPaused())
         {
             // makes sure the destination and starting point is correct (due to time manipulation)
             targetHeight = (movingTowardsOrigin) ? initialWaterLevel : endWaterLevel;
@@ -33,12 +33,12 @@ public class WaterLevel : Water
     public override void Interact()
     {
         // makes sure the water can't be triggered while its already active
-        if (!isMoving)
+        if (!getMoving())
         {
             // sets the water up to begin changing
             Debug.Log("water level changing");
             elapsedTime = 0f;
-            isMoving = true;
+            setMoving(true);
 
             movingTowardsOrigin = !movingTowardsOrigin;
         }
@@ -55,6 +55,6 @@ public class WaterLevel : Water
 
     public override PointInTime CreatePIT()
     {
-        return new WaterLevelPIT(waterLevel, isMoving, movingTowardsOrigin, elapsedTime);
+        return new WaterLevelPIT(waterLevel, getMoving(), movingTowardsOrigin, elapsedTime);
     }
 }
