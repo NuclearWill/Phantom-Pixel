@@ -28,6 +28,8 @@ public static class TimeManager
 
     public static void BeginReverseTime()
     {
+        PauseTime();
+
         reversingTime = true;
     }
 
