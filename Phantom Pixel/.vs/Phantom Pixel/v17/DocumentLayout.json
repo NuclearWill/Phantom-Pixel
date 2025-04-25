@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\Self Made Games\\Unity Games\\Phantom Pixel\\Phantom-Pixel\\Phantom Pixel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A09BF5FC-59E5-5E38-3B53-75EFE8E46AF8}|Assembly-CSharp.csproj|D:\\Self Made Games\\Unity Games\\Phantom Pixel\\Phantom-Pixel\\Phantom Pixel\\assets\\scripts\\time scripts\\interacting\\buttonconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A09BF5FC-59E5-5E38-3B53-75EFE8E46AF8}|Assembly-CSharp.csproj|d:\\self made games\\unity games\\phantom pixel\\phantom-pixel\\phantom pixel\\assets\\scripts\\time scripts\\interacting\\buttonconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A09BF5FC-59E5-5E38-3B53-75EFE8E46AF8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\time scripts\\interacting\\buttonconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A09BF5FC-59E5-5E38-3B53-75EFE8E46AF8}|Assembly-CSharp.csproj|d:\\self made games\\unity games\\phantom pixel\\phantom-pixel\\phantom pixel\\assets\\scripts\\time scripts\\interacting\\interact to win.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A09BF5FC-59E5-5E38-3B53-75EFE8E46AF8}|Assembly-CSharp.csproj|D:\\Self Made Games\\Unity Games\\Phantom Pixel\\Phantom-Pixel\\Phantom Pixel\\assets\\scripts\\time scripts\\interacting\\interact to win.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A09BF5FC-59E5-5E38-3B53-75EFE8E46AF8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\time scripts\\interacting\\interact to win.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{A09BF5FC-59E5-5E38-3B53-75EFE8E46AF8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\time scripts\\interacting\\server rack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A09BF5FC-59E5-5E38-3B53-75EFE8E46AF8}|Assembly-CSharp.csproj|d:\\self made games\\unity games\\phantom pixel\\phantom-pixel\\phantom pixel\\assets\\scripts\\menus\\main_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A09BF5FC-59E5-5E38-3B53-75EFE8E46AF8}|Assembly-CSharp.csproj|D:\\Self Made Games\\Unity Games\\Phantom Pixel\\Phantom-Pixel\\Phantom Pixel\\assets\\scripts\\menus\\main_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A09BF5FC-59E5-5E38-3B53-75EFE8E46AF8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menus\\main_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -62,8 +62,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Time Scripts\\Interacting\\Interact to Win.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T17:44:51.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T17:44:51.415Z"
             },
             {
               "$type": "Document",
@@ -75,8 +74,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Menus\\Main_Menu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T03:41:36.289Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T03:41:36.289Z"
             },
             {
               "$type": "Document",
@@ -100,8 +98,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Time Scripts\\Interacting\\Server Rack.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T22:35:38.335Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T22:35:38.335Z"
             },
             {
               "$type": "Document",
