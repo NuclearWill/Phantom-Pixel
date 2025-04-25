@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Phantom Pixel/Assets/Scenes/Dialogue Test.unity.meta
 guid: d46a97b13ab873844a1857953d58f003
+========
+guid: 1a39b729049fa4a49930b6e6477fc3da
+>>>>>>>> main:Phantom Pixel/Assets/Scenes/Hub.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
