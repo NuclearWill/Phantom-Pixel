@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 72b41f56bd22e2749a7fe97205d00ed9
+<<<<<<< HEAD:Phantom Pixel/Assets/Audio/Brian's Audio Selection SFX/Game Audio SFX 1.2 4-19-25/Explosion SFX's/sci-fi-warning-alert-jeff-kaale-1-00-07.mp3.meta
+guid: a84a9b989830cfc4e81d6b967e61fc6b
+=======
+guid: 2781648191fda2946848605238528a54
+>>>>>>> main:Phantom Pixel/Assets/Audio/Brian's Audio Selection SFX/Game Audio SFX 1.2 4-19-25/Alarms/3/sci-fi-warning-alert-jeff-kaale-1-00-07.mp3.meta
 AudioImporter:
   externalObjects: {}
   serializedVersion: 8
