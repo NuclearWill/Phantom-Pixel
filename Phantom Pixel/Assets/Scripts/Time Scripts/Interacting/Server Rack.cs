@@ -1,24 +1,32 @@
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ServerRack : ButtonConsole
 {
     [SerializeField]
-    Color normalColor = Color.white, ruinedColor = Color.red;
-
-    private Color thisColor => (!activated) ? normalColor : ruinedColor;
-    new Renderer renderer;
+    private static int serversToDestroyToWin = 4;
+    private static int serversDestroyed = 0;
 
     public override void Interact()
     {
+        serversDestroyed++;
+        if(serversDestroyed >= serversToDestroyToWin)
+        {
+            Debug.Log("You Win!");
+            LevelManager.completeLevel(3);
+            SceneManager.LoadScene(0);
+        }
+        else
+        {
+            Debug.Log("Server destroyed! " + (serversToDestroyToWin - serversDestroyed) + " left to destroy.");
+        }
         base.Interact();
-        GetComponent<Renderer>().material.color = thisColor;
     }
 
     public override void ApplyRewindData(PointInTime PIT)
     {
         base.ApplyRewindData(PIT);
-        GetComponent<Renderer>().material.color = thisColor;
     }
 
     public override PointInTime CreatePIT()

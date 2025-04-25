@@ -3,15 +3,24 @@ using UnityEngine;
 
 public class Door : TimeBody, IInteractable
 {
+    [SerializeField]
+    GameObject door, leftDoor, rightDoor; // the actual door to be manipulated
+
     [Header("Door Settings")]
     [SerializeField]
     private bool startingPosition = true;
 
-    private bool open = false;
+    [SerializeField]
+    static float openHeight, closeHeight, openSpeed;
+
+    private bool open = false, doubleDoor = false;
 
     private void Start()
     {
-        if(startingPosition)
+        if (door == null)
+            doubleDoor = true;
+
+        if (startingPosition)
             OpenDoor();
     }
 
@@ -41,14 +50,35 @@ public class Door : TimeBody, IInteractable
     private void OpenDoor()
     {
         open = true;
-        GetComponent<MeshRenderer>().enabled = false;
-        GetComponent<BoxCollider>().enabled = false;
+        if (!doubleDoor)
+        {
+            door.GetComponent<MeshRenderer>().enabled = false;
+            door.GetComponent<BoxCollider>().enabled = false;
+        }
+        else
+        {
+            leftDoor.GetComponent<MeshRenderer>().enabled = false;
+            leftDoor.GetComponent<BoxCollider>().enabled = false;
+            rightDoor.GetComponent<MeshRenderer>().enabled = false;
+            rightDoor.GetComponent<BoxCollider>().enabled = false;
+        }
     }
 
     private void CloseDoor()
     {
         open = false;
-        GetComponent<MeshRenderer>().enabled = true;
-        GetComponent<BoxCollider>().enabled = true;
+        if (!doubleDoor)
+        {
+            
+            door.GetComponent<MeshRenderer>().enabled = true;
+            door.GetComponent<BoxCollider>().enabled = true;
+        }
+        else
+        {
+            leftDoor.GetComponent<MeshRenderer>().enabled = true;
+            leftDoor.GetComponent<BoxCollider>().enabled = true;
+            rightDoor.GetComponent<MeshRenderer>().enabled = true;
+            rightDoor.GetComponent<BoxCollider>().enabled = true;
+        }
     }
 }
