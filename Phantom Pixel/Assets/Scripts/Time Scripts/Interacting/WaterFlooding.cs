@@ -79,4 +79,9 @@ public class WaterFlooding : Water
     {
         return new WaterFloodPIT(waterLevel, getMoving(), timeUntilNextFill, fillCounter, elapsedTime);
     }
+
+    public float GetFillDelay()
+    {
+        return fillDelay;
+    }
 }

@@ -9,6 +9,11 @@ public static class TimeManager
 
     private static bool timePaused = false;
 
+    private static AudioSource timeAudioSource;
+
+    [SerializeField]
+    private static AudioClip timeAudioClip;
+
     public static void UpdateTime()
     {
         if (!reversingTime && !timePaused)
