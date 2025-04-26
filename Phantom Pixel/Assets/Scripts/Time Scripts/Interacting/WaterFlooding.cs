@@ -45,7 +45,7 @@ public class WaterFlooding : Water
             }
 
         // only changes the water if time is not rewinding or paused, and if the water is supposed to be changing
-        if (isMoving && !TimeManager.isRewinding() && !TimeManager.isPaused())
+        if (getMoving() && !TimeManager.isRewinding() && !TimeManager.isPaused())
         {
             startingHeight = startHeightCalc;
             targetHeight = targetHeightCalc;
@@ -60,7 +60,7 @@ public class WaterFlooding : Water
         Debug.Log("water level rising");
 
         elapsedTime = 0f;
-        isMoving = true;
+        setMoving(true);
         fillCounter++;
     }
 
@@ -77,6 +77,6 @@ public class WaterFlooding : Water
 
     public override PointInTime CreatePIT()
     {
-        return new WaterFloodPIT(waterLevel, isMoving, timeUntilNextFill, fillCounter, elapsedTime);
+        return new WaterFloodPIT(waterLevel, getMoving(), timeUntilNextFill, fillCounter, elapsedTime);
     }
 }

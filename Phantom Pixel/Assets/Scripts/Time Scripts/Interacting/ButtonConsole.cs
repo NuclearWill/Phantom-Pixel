@@ -58,7 +58,6 @@ public class ButtonConsole : TimeBody, IInteractable
     {
         ButtonPIT nextPoint = (ButtonPIT)PIT;
 
-        Debug.Log(this.name + " " + activated);
         activated = nextPoint.isActivated;
         objectTriggered = nextPoint.objectTriggered;
     }

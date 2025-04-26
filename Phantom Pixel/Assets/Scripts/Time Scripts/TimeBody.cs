@@ -66,4 +66,28 @@ public abstract class TimeBody : MonoBehaviour
 
     // abstract function that creates a specialized PIT for the particular child object
     public abstract PointInTime CreatePIT();
+
+    public PointInTime GetPointInHistory(int index)
+    {
+        // returns the point in history at the given index
+        if (index < history.Count)
+            return history[index];
+        else
+            return null;
+    }
+}
+
+public abstract class DynamicObject : TimeBody
+{
+    private bool isMoving = false;
+
+    public bool getMoving()
+    {
+        return isMoving;
+    }
+
+    public void setMoving(bool moving)
+    {
+        isMoving = moving;
+    }
 }

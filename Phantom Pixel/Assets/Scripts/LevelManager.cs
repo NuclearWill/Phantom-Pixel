@@ -9,4 +9,10 @@ public static class LevelManager
     {
         levelCompleted[level - 1] = true;
     }
+
+    public static void LoseLevel()
+    {
+        Debug.Log("You lost the level!");
+        TimeManager.RestartTime();
+    }
 }

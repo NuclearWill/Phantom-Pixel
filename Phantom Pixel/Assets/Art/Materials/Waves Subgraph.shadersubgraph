@@ -5,7 +5,11 @@
     "m_Properties": [],
     "m_Keywords": [],
     "m_Dropdowns": [],
-    "m_CategoryData": [],
+    "m_CategoryData": [
+        {
+            "m_Id": "f5ad5995a9b74530ab9d305e281b2438"
+        }
+    ],
     "m_Nodes": [
         {
             "m_Id": "f1c267b5a9d947e992edfe6111657223"
@@ -102,5 +106,13 @@
         "m_SerializableColors": []
     },
     "IsFirstSlotValid": true
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "f5ad5995a9b74530ab9d305e281b2438",
+    "m_Name": "",
+    "m_ChildObjectList": []
 }
 

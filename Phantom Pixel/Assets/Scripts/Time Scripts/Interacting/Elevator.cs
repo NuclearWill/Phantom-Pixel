@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class Elevator : TimeBody, IInteractable
+public class Elevator : DynamicObject, IInteractable
 {
     // destinations for elevator
     private Vector3 location1;
@@ -21,7 +21,6 @@ public class Elevator : TimeBody, IInteractable
     public float timeToMove = 1f;
 
     // movement based private variables
-    private bool isMoving = false;
     private bool movingTowardsOrigin = true;
     private float elapsedTime = 0f;
 
@@ -40,7 +39,7 @@ public class Elevator : TimeBody, IInteractable
     private void Update()
     {
         // only moves the elevator if time is not rewinding or paused, and if the elevator is supposed to be moving
-        if (isMoving && !TimeManager.isRewinding() && !TimeManager.isPaused())
+        if (getMoving() && !TimeManager.isRewinding() && !TimeManager.isPaused())
         {
             // makes sure the destination and starting point is correct (due to time manipulation)
             targetLocation = (movingTowardsOrigin) ? location1 : location2;
@@ -72,7 +71,7 @@ public class Elevator : TimeBody, IInteractable
                         usersMovement.CanMove();
                 }
 
-                isMoving = false;
+                setMoving(false);
                 elevatorUser = null;
             }
         }
@@ -81,12 +80,12 @@ public class Elevator : TimeBody, IInteractable
     public void Interact()
     {
         // makes sure the elevator can't be triggered unless if it is already done moving
-        if (!isMoving)
+        if (!getMoving())
         {
             // sets the elevator up to begin moving
             Debug.Log("elevator activate");
             elapsedTime = 0f;
-            isMoving = true;
+            setMoving(true);
 
             movingTowardsOrigin = !movingTowardsOrigin;
 
@@ -97,7 +96,7 @@ public class Elevator : TimeBody, IInteractable
             if (Physics.Raycast(ray, out RaycastHit hit, 1.4f))
             {
                 // the raycast will hit the model of the player. The parent of the model is the player object that we need
-                elevatorUser = hit.transform.parent.gameObject;
+                elevatorUser = hit.transform.gameObject;
                 // attempts to access the rider's playerMovement script to prevent them from attemping to walk off the elevator while it's operating
                 PlayerMovement usersMovement = elevatorUser.GetComponent<PlayerMovement>();
                 if(usersMovement != null)
@@ -113,13 +112,13 @@ public class Elevator : TimeBody, IInteractable
         transform.position = nextPoint.position;
         transform.rotation = nextPoint.rotation;
 
-        isMoving = nextPoint.isMoving;
+        setMoving(nextPoint.isMoving);
         movingTowardsOrigin = nextPoint.movingTowardsOrigin;
         elapsedTime = nextPoint.elapsedTime;
     }
 
     public override PointInTime CreatePIT()
     {
-        return new ElevatorPIT(transform, isMoving, movingTowardsOrigin, elapsedTime);
+        return new ElevatorPIT(transform, getMoving(), movingTowardsOrigin, elapsedTime);
     }
 }

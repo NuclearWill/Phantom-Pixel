@@ -2,15 +2,12 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public abstract class Water : TimeBody, IInteractable
+public abstract class Water : DynamicObject, IInteractable
 {
     [Header("Water Body Reference")]
     public GameObject WaterBody;
 
-
     // internal variables
-    [NonSerialized]
-    public bool isMoving;
     [NonSerialized]
     public float waterLevel, elapsedTime = 0f, startingHeight, targetHeight;
     [NonSerialized]
@@ -19,6 +16,8 @@ public abstract class Water : TimeBody, IInteractable
     [Tooltip("How many tiles should the water start at? Have it at 0 to start empty")]
     public float initialWaterLevel = 0f;
     public float waterFillSpeed = 1f;
+    [Tooltip("How much of an offset should the water level be below its tile height?")]
+    public float waterLevelOffset = 0.1f;
 
     private void Start()
     {
@@ -33,7 +32,7 @@ public abstract class Water : TimeBody, IInteractable
     {
         WaterPIT nextPoint = (WaterPIT)PIT;
 
-        isMoving = nextPoint.isMoving;
+        setMoving(nextPoint.isMoving);
         elapsedTime = nextPoint.elapsedTime;
 
         UpdateWaterLevel(nextPoint.waterLevel);
@@ -41,7 +40,7 @@ public abstract class Water : TimeBody, IInteractable
 
     public override PointInTime CreatePIT()
     {
-        return new WaterPIT(waterLevel, isMoving, elapsedTime);
+        return new WaterPIT(waterLevel, getMoving(), elapsedTime);
     }
 
     public void UpdateWaterLevel(float newLevel)
@@ -65,16 +64,16 @@ public abstract class Water : TimeBody, IInteractable
     public void ShiftWaterLevel()
     {
         // changes the position according to elapsed time
-        UpdateWaterLevel(Mathf.Lerp(startingHeight, targetHeight, (elapsedTime / waterFillSpeed)));
+        UpdateWaterLevel(Mathf.Lerp(startingHeight - waterLevelOffset, targetHeight - waterLevelOffset, (elapsedTime / waterFillSpeed)));
 
         elapsedTime += Time.deltaTime;
 
         // finishes after done moving
         if (elapsedTime > waterFillSpeed)
         {
-            UpdateWaterLevel(targetHeight);
+            UpdateWaterLevel(targetHeight - waterLevelOffset);
 
-            isMoving = false;
+            setMoving(false);
         }
     }
 
