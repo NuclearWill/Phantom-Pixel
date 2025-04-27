@@ -16,7 +16,10 @@ public class Main_Menu : MonoBehaviour
     public void GameGo (int i)
     {
         TimeManager.resetGameTime();
-        SceneManager.LoadScene(i);
+        LevelManager.LoadLevelData();
+        int currentLevel = LevelManager.currentLevel();
+        SceneManager.LoadScene(currentLevel);
+        //SceneManager.LoadScene(i);
     }
     public void QuitGame ()
     {

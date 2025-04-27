@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -7,6 +8,8 @@ public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI speakertext;
     public TextMeshProUGUI dialoguetext;
+    public Dialogue LevelDialogue;
+    public float textTimer = 2.0f;
     
     private Queue<string> sentences;
     
@@ -14,14 +17,28 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         sentences = new Queue<string>();
-        
-    }
+        StartCoroutine(Dialogue(LevelDialogue));
 
-    // Update is called once per frame
-    void Update()
+    }
+    
+    public IEnumerator Dialogue(Dialogue dialogue)
     {
+        speakertext.text = dialogue.speaker;
+        sentences.Clear();
+        foreach (var sentence in dialogue.sentences)
+        {
+            sentences.Enqueue(sentence);
+            
+        }
+
+        while (sentences.Count != 0)
+        {
+            DisplayNextSentence();
+            yield return textTimer;
+        }
         
     }
+    
 
     public void StartDialogue(Dialogue dialogue)
     {
@@ -39,6 +56,12 @@ public class DialogueManager : MonoBehaviour
         DisplayNextSentence();
     }
 
+    //This has to be auto continue
+    // this is probably best handled through a co-routine 
+    // in this coroutine the program will first 
+    // wait actually i think i just need to make start dialogue the coroutine
+    // Start dialogue will fire off at each scene start 
+    // then pause the timer until sentences is empty 
     public void DisplayNextSentence()
     {
         if (sentences.Count == 0)
