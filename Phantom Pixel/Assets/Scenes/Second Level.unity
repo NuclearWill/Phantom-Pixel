@@ -21777,6 +21777,10 @@ PrefabInstance:
       value: Music Manager
       objectReference: {fileID: 0}
     - target: {fileID: 5977636018723714727, guid: 54707d8f9ae2cde43a7b9abb0f884737, type: 3}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5977636018723714727, guid: 54707d8f9ae2cde43a7b9abb0f884737, type: 3}
       propertyPath: m_Resource
       value: 
       objectReference: {fileID: 8300000, guid: b7179884be6619442b2762d3ca5a89ec, type: 3}

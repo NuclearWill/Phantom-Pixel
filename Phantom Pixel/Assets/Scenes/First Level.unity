@@ -10195,6 +10195,10 @@ PrefabInstance:
       value: Music Manager
       objectReference: {fileID: 0}
     - target: {fileID: 5977636018723714727, guid: 54707d8f9ae2cde43a7b9abb0f884737, type: 3}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5977636018723714727, guid: 54707d8f9ae2cde43a7b9abb0f884737, type: 3}
       propertyPath: m_Resource
       value: 
       objectReference: {fileID: 8300000, guid: 2a9ca4851572a254591b4bdf3a037b51, type: 3}
@@ -16684,7 +16688,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab4afbe6d8eb7004b95271e279396d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blinkBuffer: 1
   numbOfBlinks: 2
   timeRemainingToBeginBlinking: 5
   startTime: 15

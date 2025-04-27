@@ -9,9 +9,6 @@ public class BombTimer : MonoBehaviour
 {
     [Header("Blinking UI Settings")]
     [SerializeField]
-    [Tooltip("How much time before the water floods should the ui start blinking?")]
-    private float blinkBuffer = 1f;
-    [SerializeField]
     [Range(1, 6)]
     [Tooltip("How many times the ui should blink in one second")]
     private int numbOfBlinks = 3;
@@ -35,8 +32,8 @@ public class BombTimer : MonoBehaviour
 
     // lambda functions
     bool timeToBlink => timeLeft <= timeRemainingToBeginBlinking;
-    int firstPowerDigit => (int)timeLeft % 10;
-    int secondPowerDigit => (int)(timeLeft / 10) % 10;
+    int firstPowerDigit => Mathf.CeilToInt(timeLeft) % 10;
+    int secondPowerDigit => (int) (Mathf.Ceil(timeLeft) / 10) % 10;
 
     private void Awake()
     {
