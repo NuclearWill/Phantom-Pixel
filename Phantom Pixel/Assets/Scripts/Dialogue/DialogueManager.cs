@@ -10,13 +10,20 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI dialoguetext;
     public Dialogue LevelDialogue;
     public float textTimer = 2.0f;
+    public GameObject dialogueUI;
     
     private Queue<string> sentences;
+    
+    /// <summary>
+    /// Need to animate Dialogue
+    /// </summary>
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         sentences = new Queue<string>();
+        TimeManager.PauseTime();
+        dialogueUI.SetActive(true);
         StartCoroutine(Dialogue(LevelDialogue));
 
     }
@@ -28,13 +35,12 @@ public class DialogueManager : MonoBehaviour
         foreach (var sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
-            
         }
 
         while (sentences.Count != 0)
         {
             DisplayNextSentence();
-            yield return textTimer;
+            yield return new WaitForSeconds(textTimer);
         }
         
     }
@@ -77,6 +83,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
+        TimeManager.ResumeTime();
         Debug.Log("End of Conversation");
     }
 }

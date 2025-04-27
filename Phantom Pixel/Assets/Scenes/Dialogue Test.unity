@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &196292094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -695,8 +695,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11a66d92ced892844b0dbc83bdcc17c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakertext: {fileID: 0}
-  dialoguetext: {fileID: 0}
+  speakertext: {fileID: 1753239806}
+  dialoguetext: {fileID: 1502700465}
+  LevelDialogue:
+    sentences:
+    - This is the test for the dialogue function
+    - 'This line should show after 2 seconds '
+    - This line should be for the las dialogue scene
+    speaker: AI
+  textTimer: 2
+  dialogueUI: {fileID: 196292093}
 --- !u!4 &1456673094
 Transform:
   m_ObjectHideFlags: 0
