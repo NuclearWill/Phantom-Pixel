@@ -5,18 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class Main_Menu : MonoBehaviour
 {
-    public int i;
-
     private void Start()
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }
 
-    public void GameGo (int i)
+    public void GameGo ()
     {
         TimeManager.resetGameTime();
-        SceneManager.LoadScene(i);
+        SceneManager.LoadScene(1);
     }
     public void QuitGame ()
     {
