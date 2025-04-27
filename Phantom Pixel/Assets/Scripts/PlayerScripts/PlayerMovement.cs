@@ -6,6 +6,12 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Player Animation References")]
+    [SerializeField]
+    Animation idleAnim;
+    [SerializeField]
+    Animation walkAnim;
+
     [Header("Player Object References")]
     public Transform orientation;
     public Transform playerObj;
@@ -29,12 +35,16 @@ public class PlayerMovement : MonoBehaviour
 
     private InputAction move;
 
+    private Animator anim;
+
     private bool onStair = false, walkingUpStair = false, walkingDownStair = false;
     private float stairRot;
 
     private void Awake()
     {
         playerControls = new InputSystem_Actions();
+
+        anim = GetComponent<Animator>();
     }
     private void OnEnable()
     {
@@ -76,7 +86,13 @@ public class PlayerMovement : MonoBehaviour
                             walkingDownStair = true;
 
                         if (checkFloor() && checkWall())
+                        {
+
+                            // stop playing idle animation here
+                            // start playing walking animation here
+
                             StartCoroutine(MovePlayer(moveDirection)); // starts the function to move the player to the next tile
+                        }
 
                         // resets variables
                         walkingUpStair = false;
@@ -144,6 +160,9 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // end of movement code
+
+        // stop walking animation here
+        // play idle animation here
 
         transform.position = targetPos;
 

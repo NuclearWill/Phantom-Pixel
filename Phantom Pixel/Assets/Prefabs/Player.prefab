@@ -177,12 +177,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4777894181580369304}
-  - component: {fileID: 5788931770797569850}
   - component: {fileID: 8235095618603200553}
+  - component: {fileID: 841851436933638168}
+  - component: {fileID: 5788931770797569850}
   - component: {fileID: 962476687568200836}
   - component: {fileID: 2205497685506343671}
   - component: {fileID: 216865529161035130}
-  - component: {fileID: 841851436933638168}
+  - component: {fileID: 5249778962826269040}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -207,26 +208,6 @@ Transform:
   - {fileID: 5689152485748164773}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5788931770797569850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7643788515212009128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18dfa90dd61039342ab9349791c0ed5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  orientation: {fileID: 5689152485748164773}
-  playerObj: {fileID: 5274144884028145663}
-  thirdPersonCamera: {fileID: 0}
-  timeToMove: 0.2
-  moveDistance: 2
-  raycastDistance: 1.5
-  raycastStairOffset: 0.8
-  turnSpeed: 10
 --- !u!114 &8235095618603200553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,6 +238,55 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!54 &841851436933638168
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7643788515212009128}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 0
+  m_ImplicitTensor: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!114 &5788931770797569850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7643788515212009128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18dfa90dd61039342ab9349791c0ed5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idleAnim: {fileID: 0}
+  walkAnim: {fileID: 0}
+  orientation: {fileID: 5689152485748164773}
+  playerObj: {fileID: 5274144884028145663}
+  thirdPersonCamera: {fileID: 0}
+  timeToMove: 0.2
+  moveDistance: 2
+  raycastDistance: 1.5
+  raycastStairOffset: 0.8
+  turnSpeed: 10
 --- !u!114 &962476687568200836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,33 +325,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   raycastDistance: 2
   debug: 0
---- !u!54 &841851436933638168
-Rigidbody:
+--- !u!95 &5249778962826269040
+Animator:
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7643788515212009128}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 0
-  m_ImplicitTensor: 0
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3de9344b64f1189439cf6a37f0994b99, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1061052064391591304
 PrefabInstance:
   m_ObjectHideFlags: 0
