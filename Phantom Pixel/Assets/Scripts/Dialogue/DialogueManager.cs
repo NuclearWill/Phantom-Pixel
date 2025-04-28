@@ -14,40 +14,39 @@ public class DialogueManager : MonoBehaviour
     public GameObject dialogueUI;
     
     private Queue<string> sentences;
-    
+
+    public static bool isDialogueActive { private set; get; } = false;
+
     /// <summary>
     /// Need to animate Dialogue
     /// </summary>
-    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         sentences = new Queue<string>();
-        // dialogueUI.SetActive(true);
+
         StartCoroutine(Dialogue(LevelDialogue));
 
     }
     
     public IEnumerator Dialogue(Dialogue dialogue)
     {
-        dialogueUI.SetActive(true);
-        TimeManager.PauseTime();
-        speakertext.text = dialogue.speaker;
-        sentences.Clear();
+        StartDialogue(dialogue);
+
+        // dialogue output code
         foreach (var sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
 
-        while (sentences.Count != 0)
+        while (sentences.Count > 0)
         {
             DisplayNextSentence();
             yield return new WaitForSeconds(textTimer);
         }
-        
-        dialogueUI.SetActive(false);
-        TimeManager.ResumeTime();
-        
+
+        EndDialogue();
     }
     
 /*
@@ -91,23 +90,27 @@ public class DialogueManager : MonoBehaviour
     // wait actually i think i just need to make start dialogue the coroutine
     // Start dialogue will fire off at each scene start 
     // then pause the timer until sentences is empty 
+
+    // outputs the sentence to the dialogue box
     public void DisplayNextSentence()
     {
-        if (sentences.Count == 0)
-        {
-            EndDialogue();
-            return;
-        }
-
         string sentence = sentences.Dequeue();
         dialoguetext.text = sentence;
         Debug.Log(sentence);
     }
 
-    public void EndDialogue()
+    private void StartDialogue(Dialogue dialogue)
+    {
+        isDialogueActive = true;
+
+        dialogueUI.SetActive(true);
+        speakertext.text = dialogue.speaker;
+        sentences.Clear();
+    }
+    private void EndDialogue()
     {
         dialogueUI.SetActive(false);
-        TimeManager.ResumeTime();
         Debug.Log("End of Conversation");
+        isDialogueActive = false;
     }
 }

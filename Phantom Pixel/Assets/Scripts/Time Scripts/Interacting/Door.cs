@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using static UnityEditor.FilePathAttribute;
 
 public class Door : DynamicObject, IInteractable
 {
@@ -14,7 +13,7 @@ public class Door : DynamicObject, IInteractable
     static float openHeight = 3f, closeHeight = 1f, openSpeed = 0.5f;
 
     // internal variables
-    private bool open, doubleDoor = false;
+    private bool open;
     private float elapsedTime;
     private AudioSource doorAudioSource;
 
@@ -25,9 +24,6 @@ public class Door : DynamicObject, IInteractable
 
     private void Start()
     {
-        if (door == null)
-            doubleDoor = true;
-
         if (startingPosition)
         {
             open = true;

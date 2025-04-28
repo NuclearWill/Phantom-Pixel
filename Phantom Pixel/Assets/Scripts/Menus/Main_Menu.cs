@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Main_Menu : MonoBehaviour
 {
-    public int i;
+    public string i;
 
     private void Start()
     {
@@ -13,12 +13,11 @@ public class Main_Menu : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
     }
 
-    public void GameGo (int i)
+    public void GameGo (string i)
     {
         TimeManager.resetGameTime();
         LevelManager.LoadLevelData();
-        int currentLevel = LevelManager.currentLevel();
-        SceneManager.LoadScene(currentLevel);
+        SceneManager.LoadScene(i);
         //SceneManager.LoadScene(i);
     }
     public void QuitGame ()
