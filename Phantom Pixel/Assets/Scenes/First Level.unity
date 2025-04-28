@@ -15167,10 +15167,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -17495,7 +17495,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1831569720}
-  - component: {fileID: 1831569724}
+  - component: {fileID: 1831569721}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -17518,7 +17518,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1831569724
+--- !u!114 &1831569721
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17527,11 +17527,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1831569719}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20af16656bc9aab41bc1a87ab6efdcc0, type: 3}
+  m_Script: {fileID: 11500000, guid: 39f43caab96a42c4691cc1145aa75c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reverseUI: {fileID: 0}
-  pauseUI: {fileID: 1725482627}
+  numbOfBlinks: 3
+  timeRemainingToBeginBlinking: 5
+  startTime: 15
+  digit1Object: {fileID: 1355118303}
+  digit2Object: {fileID: 1703962806}
+  number:
+  - {fileID: 21300000, guid: 517a924b7f651b947b47926572d5ef3e, type: 3}
+  - {fileID: 21300000, guid: 8bc12269502f5604a931910e02cf1ea4, type: 3}
+  - {fileID: 21300000, guid: a825851fcafde344693e457676f873dd, type: 3}
+  - {fileID: 21300000, guid: 62f26e915044d684caa79b47d077d4fe, type: 3}
+  - {fileID: 21300000, guid: f8fff6f1add4e70448fd2702c8d4319e, type: 3}
+  - {fileID: 21300000, guid: a398f0f23176e3945930f7655fa2910b, type: 3}
+  - {fileID: 21300000, guid: e6d728a872302dc448d628773229cd87, type: 3}
+  - {fileID: 21300000, guid: d148155551f66af459e40279d7cc8130, type: 3}
+  - {fileID: 21300000, guid: a4b2afa739e66d64589f23c3bfa5a37f, type: 3}
+  - {fileID: 21300000, guid: 56f1aea11d1f05f498f787ef765c0f25, type: 3}
 --- !u!1001 &1833005859
 PrefabInstance:
   m_ObjectHideFlags: 0
