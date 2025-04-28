@@ -43047,6 +43047,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Music Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 5977636018723714727, guid: 54707d8f9ae2cde43a7b9abb0f884737, type: 3}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5977636018723714727, guid: 54707d8f9ae2cde43a7b9abb0f884737, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 3e38ff3d00ff43d48b64031ec0f63fc4, type: 3}
+    - target: {fileID: 5977636018723714727, guid: 54707d8f9ae2cde43a7b9abb0f884737, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3e38ff3d00ff43d48b64031ec0f63fc4, type: 3}
     - target: {fileID: 6580831352869415166, guid: 54707d8f9ae2cde43a7b9abb0f884737, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

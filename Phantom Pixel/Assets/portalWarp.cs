@@ -1,16 +1,17 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class portalWarp : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public string levelName;
+    private void OnTriggerEnter(Collider other)
     {
         
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("Portal Triggered");
+            LevelManager.LoadLevel(levelName);
+        }
     }
 }

@@ -49,6 +49,7 @@ MonoBehaviour:
   WaterBody: {fileID: 9068862159511326544}
   initialWaterLevel: 0
   waterFillSpeed: 1
+  waterLevelOffset: 0.1
   endWaterLevel: 1
 --- !u!54 &1162819901808012301
 Rigidbody:
@@ -95,7 +96,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8216504486683321361
 Transform:
   m_ObjectHideFlags: 0
