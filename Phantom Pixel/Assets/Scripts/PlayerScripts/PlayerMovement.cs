@@ -251,6 +251,14 @@ public class PlayerMovement : MonoBehaviour
 
         if (struckSomething)
         {
+            // returns false if the floor is a dynamic object moving
+            if (hit.transform.gameObject.TryGetComponent<DynamicObject>(out DynamicObject dynObject1) && ((DynamicPIT)dynObject1.GetPointInHistory(1)).isMoving)
+            {
+                Debug.Log("Object below is about to move, cannot walk ahead");
+                return false;
+            }
+
+
             // uses a switch to apply different checks and variables depending on the floor the player is trying to walk on
             switch (hit.transform.tag)
             {
