@@ -83,7 +83,11 @@ public static class LevelManager
 
     public static void LoadLevel(string levelName)
     {
+        // ensures TimeManager is fully reset before loading a new level
         TimeManager.resetGameTime();
+        TimeManager.StopReversingTime();
+        TimeManager.ResumeTime();
+
         SceneManager.LoadScene(levelName);
     }
 }
