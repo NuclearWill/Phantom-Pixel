@@ -6877,10 +6877,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 178161475407071449, guid: 04349cc3d9445874ab601897f6ebca68, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1941760158}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04349cc3d9445874ab601897f6ebca68, type: 3}
 --- !u!4 &615974945 stripped
 Transform:
@@ -10652,6 +10649,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -804731622281664130, guid: c61f9f0ac69b583409d81758861a26dd, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4cd60938cde4e2a429392cf305f76782, type: 2}
+    - target: {fileID: -678588488315902003, guid: c61f9f0ac69b583409d81758861a26dd, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fe071d34a712a8e4cb4a7acf8007f6a3, type: 2}
     - target: {fileID: 919132149155446097, guid: c61f9f0ac69b583409d81758861a26dd, type: 3}
       propertyPath: m_Name
       value: Sci_desk
@@ -22800,33 +22805,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d9e2eca28d049349b6c0abbdf30ac06, type: 3}
---- !u!1 &1941760156 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 178161475407071449, guid: 04349cc3d9445874ab601897f6ebca68, type: 3}
-  m_PrefabInstance: {fileID: 610346917}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1941760158
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941760156}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3de9344b64f1189439cf6a37f0994b99, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 1
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1942585486
 GameObject:
   m_ObjectHideFlags: 0
