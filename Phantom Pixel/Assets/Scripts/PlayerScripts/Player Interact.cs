@@ -28,7 +28,7 @@ public class PlayerInteract : MonoBehaviour
 
     void Update()
     {
-        if (interact.WasPressedThisFrame())
+        if (interact.WasPressedThisFrame() && !TimeManager.isPaused())
         {
             // shoots a ray out from where the player is facing, contining if it hits something
             if (Physics.Raycast(transform.position, transform.forward * rayDistance, out RaycastHit hit))

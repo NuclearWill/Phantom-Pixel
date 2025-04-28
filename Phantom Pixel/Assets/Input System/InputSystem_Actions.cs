@@ -484,6 +484,17 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""36f0e440-472f-498e-8b66-867d404fa519"",
+                    ""path"": ""<Keyboard>/tab"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause Game"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""6b4b85f2-d2a3-4699-a711-0a6c2f1c40fe"",
                     ""path"": ""<Gamepad>/start"",
                     ""interactions"": """",

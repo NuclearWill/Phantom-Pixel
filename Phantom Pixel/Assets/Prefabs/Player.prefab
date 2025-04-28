@@ -277,8 +277,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18dfa90dd61039342ab9349791c0ed5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idleAnim: {fileID: 0}
-  walkAnim: {fileID: 0}
+  idleAnim: {fileID: -203655887218126122, guid: b2d9b4b4e86efba498b281ee547cae60, type: 3}
+  walkAnim: {fileID: -203655887218126122, guid: c8ac53652d193484c90d4c541f57cf3b, type: 3}
   orientation: {fileID: 5689152485748164773}
   playerObj: {fileID: 5274144884028145663}
   thirdPersonCamera: {fileID: 0}
@@ -286,7 +286,7 @@ MonoBehaviour:
   moveDistance: 2
   raycastDistance: 1.5
   raycastStairOffset: 0.8
-  turnSpeed: 10
+  turnSpeed: 20
 --- !u!114 &962476687568200836
 MonoBehaviour:
   m_ObjectHideFlags: 0

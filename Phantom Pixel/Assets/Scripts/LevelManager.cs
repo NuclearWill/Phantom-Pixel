@@ -80,4 +80,14 @@ public static class LevelManager
             Debug.LogError("No save data found to erase " + path);
         }
     }
+
+    public static void LoadLevel(string levelName)
+    {
+        // ensures TimeManager is fully reset before loading a new level
+        TimeManager.resetGameTime();
+        TimeManager.StopReversingTime();
+        TimeManager.ResumeTime();
+
+        SceneManager.LoadScene(levelName);
+    }
 }

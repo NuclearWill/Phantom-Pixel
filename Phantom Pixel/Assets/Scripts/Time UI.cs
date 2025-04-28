@@ -3,9 +3,6 @@ using UnityEngine;
 public class ReverseTimeUI : MonoBehaviour
 {
     [SerializeField]
-    private GameObject reverseUI;
-
-    [SerializeField]
     private GameObject pauseUI;
 
     // super basic script to turn on the visual indicating that time is reversing

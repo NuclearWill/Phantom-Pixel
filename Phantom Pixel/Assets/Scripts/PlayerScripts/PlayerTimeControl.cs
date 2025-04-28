@@ -33,7 +33,8 @@ public class PlayerTimeControl : MonoBehaviour
 
     void Update()
     {
-        if (!GetComponent<PlayerMovement>().getIsMoving())
+        // doesn't let the player manipulate time while moving, while the game is paused, or while dialogue is active
+        if (!GetComponent<PlayerMovement>().getIsMoving() && !PauseMenuScript.GamePaused() && !DialogueManager.isDialogueActive)
         {
             // rewind time controls
             if (rewind.WasPressedThisFrame())
