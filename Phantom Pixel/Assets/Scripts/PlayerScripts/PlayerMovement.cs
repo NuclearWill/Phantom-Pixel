@@ -8,9 +8,9 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("Player Animation References")]
     [SerializeField]
-    Animation idleAnim;
+    AnimationClip idleAnim;
     [SerializeField]
-    Animation walkAnim;
+    AnimationClip walkAnim;
 
     [Header("Player Object References")]
     public Transform orientation;

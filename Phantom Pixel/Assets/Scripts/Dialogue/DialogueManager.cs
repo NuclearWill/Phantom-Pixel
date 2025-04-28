@@ -23,7 +23,7 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         sentences = new Queue<string>();
-       // dialogueUI.SetActive(true);
+        // dialogueUI.SetActive(true);
         StartCoroutine(Dialogue(LevelDialogue));
 
     }
