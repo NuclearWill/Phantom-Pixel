@@ -23,7 +23,6 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         sentences = new Queue<string>();
-        TimeManager.PauseTime();
        // dialogueUI.SetActive(true);
         StartCoroutine(Dialogue(LevelDialogue));
 
@@ -32,6 +31,7 @@ public class DialogueManager : MonoBehaviour
     public IEnumerator Dialogue(Dialogue dialogue)
     {
         dialogueUI.SetActive(true);
+        TimeManager.PauseTime();
         speakertext.text = dialogue.speaker;
         sentences.Clear();
         foreach (var sentence in dialogue.sentences)
@@ -46,6 +46,7 @@ public class DialogueManager : MonoBehaviour
         }
         
         dialogueUI.SetActive(false);
+        TimeManager.ResumeTime();
         
     }
     

@@ -1,29 +1,29 @@
 Using pre-set license
 Built from '6000.0/staging' branch; Version is '6000.0.42f1 (feb9a7235030) revision 16693671'; Using compiler version '193933523'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 32555 MB
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 16244 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-D:\6000.0.42f1\Editor\Unity.exe
+D:\Unity Installs\Unity 6000.0.42f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/Phantom-Pixel/Phantom Pixel
+D:/Github/Unity Projects/Phantom-Pixel/Phantom Pixel
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50154
+59252
 -job-worker-count
-9
+7
 -background-job-worker-count
 8
 -gc-helper-count
 1
-Successfully changed project path to: D:/Phantom-Pixel/Phantom Pixel
-D:/Phantom-Pixel/Phantom Pixel
+Successfully changed project path to: D:/Github/Unity Projects/Phantom-Pixel/Phantom Pixel
+D:/Github/Unity Projects/Phantom-Pixel/Phantom Pixel
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -59,13 +59,13 @@ D:/Phantom-Pixel/Phantom Pixel
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [25124]  Target information:
+Player connection [7324]  Target information:
 
-Player connection [25124]  * "[IP] 172.20.16.186 [Port] 0 [Flags] 2 [Guid] 2168478209 [EditorId] 2168478209 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-8KTVPCA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [7324]  * "[IP] 192.168.4.21 [Port] 0 [Flags] 2 [Guid] 633388155 [EditorId] 633388155 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FQ14130) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [25124] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [25124] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 9
+Player connection [7324] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [7324] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -76,59 +76,59 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 2.19 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.82 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.42f1 (feb9a7235030)
-[Subsystems] Discovering subsystems at path D:/6000.0.42f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Phantom-Pixel/Phantom Pixel/Assets
+[Subsystems] Discovering subsystems at path D:/Unity Installs/Unity 6000.0.42f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Github/Unity Projects/Phantom-Pixel/Phantom Pixel/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 4070 (ID=0x2786)
-    Vendor:   NVIDIA
-    VRAM:     12012 MB
-    Driver:   32.0.15.7283
+    Renderer: AMD Radeon RX 6800 XT (ID=0x73bf)
+    Vendor:   ATI
+    VRAM:     16312 MB
+    Driver:   32.0.12033.1030
 Initialize mono
-Mono path[0] = 'D:/6000.0.42f1/Editor/Data/Managed'
-Mono path[1] = 'D:/6000.0.42f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'D:/6000.0.42f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56768
+Mono path[0] = 'D:/Unity Installs/Unity 6000.0.42f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity Installs/Unity 6000.0.42f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity Installs/Unity 6000.0.42f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56032
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/6000.0.42f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002659 seconds.
-- Loaded All Assemblies, in  0.474 seconds
+Register platform support module: D:/Unity Installs/Unity 6000.0.42f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002314 seconds.
+- Loaded All Assemblies, in  0.433 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.437 seconds
-Domain Reload Profiling: 911ms
-	BeginReloadAssembly (178ms)
+- Finished resetting the current domain, in  0.325 seconds
+Domain Reload Profiling: 757ms
+	BeginReloadAssembly (169ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (43ms)
+	RebuildCommonClasses (42ms)
 	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (55ms)
-	LoadAllAssembliesAndSetupDomain (181ms)
-		LoadAssemblies (178ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (164ms)
+		LoadAssemblies (168ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (177ms)
-			TypeCache.Refresh (175ms)
-				TypeCache.ScanAssembly (160ms)
+		AnalyzeDomain (161ms)
+			TypeCache.Refresh (159ms)
+				TypeCache.ScanAssembly (146ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (437ms)
+	FinalizeReload (325ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (380ms)
+		SetupLoadedEditorAssemblies (293ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (29ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (78ms)
-			ProcessInitializeOnLoadAttributes (198ms)
-			ProcessInitializeOnLoadMethodAttributes (69ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (54ms)
+			ProcessInitializeOnLoadAttributes (156ms)
+			ProcessInitializeOnLoadMethodAttributes (55ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -140,11 +140,11 @@ Import Worker Mode flag is 0x00
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.932 seconds
+- Loaded All Assemblies, in  0.861 seconds
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 1.33 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.26 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Package Manager log level set to [2]
@@ -152,92 +152,156 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.976 seconds
-Domain Reload Profiling: 1907ms
-	BeginReloadAssembly (232ms)
+- Finished resetting the current domain, in  0.807 seconds
+Domain Reload Profiling: 1668ms
+	BeginReloadAssembly (212ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
-	RebuildCommonClasses (43ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (46ms)
-	LoadAllAssembliesAndSetupDomain (593ms)
-		LoadAssemblies (434ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (559ms)
+		LoadAssemblies (405ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (312ms)
-			TypeCache.Refresh (227ms)
-				TypeCache.ScanAssembly (207ms)
-			BuildScriptInfoCaches (68ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (977ms)
+		AnalyzeDomain (293ms)
+			TypeCache.Refresh (207ms)
+				TypeCache.ScanAssembly (189ms)
+			BuildScriptInfoCaches (70ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (808ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (776ms)
+		SetupLoadedEditorAssemblies (639ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (133ms)
-			ProcessInitializeOnLoadAttributes (497ms)
-			ProcessInitializeOnLoadMethodAttributes (133ms)
-			AfterProcessingInitializeOnLoad (4ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (103ms)
+			ProcessInitializeOnLoadAttributes (427ms)
+			ProcessInitializeOnLoadMethodAttributes (99ms)
+			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 1.58 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.32 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 215 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6476 unused Assets / (7.5 MB). Loaded Objects now: 7186.
-Memory consumption went from 181.2 MB to 173.7 MB.
-Total: 12.573000 ms (FindLiveObjects: 0.866000 ms CreateObjectMapping: 0.604300 ms MarkObjects: 6.258900 ms  DeleteObjects: 4.841900 ms)
+Unloading 6490 unused Assets / (4.4 MB). Loaded Objects now: 7200.
+Memory consumption went from 166.9 MB to 162.6 MB.
+Total: 9.454600 ms (FindLiveObjects: 0.849700 ms CreateObjectMapping: 0.390500 ms MarkObjects: 5.443200 ms  DeleteObjects: 2.769200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 374.367625 seconds.
-  path: Assets/Art/Jenna's Assets/Textures/Window Textures/glass1_BaseMap_sRGB.png
-  artifactKey: Guid(e603cc2aaa34c0b44977922aeb096a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Jenna's Assets/Textures/Window Textures/glass1_BaseMap_sRGB.png using Guid(e603cc2aaa34c0b44977922aeb096a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1a50a5eb11d92138c287410d500db127') in 0.1072026 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Art/Jenna's Assets/Textures/Window Textures
-  artifactKey: Guid(b93b9659cdb6a3d428122524441df67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Jenna's Assets/Textures/Window Textures using Guid(b93b9659cdb6a3d428122524441df67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '10ec8a38d44f92c1109209f1a009b544') in 0.00091 seconds
+  Time since last request: 383605.427629 seconds.
+  path: Assets/Scenes/Dialogue Test.unity
+  artifactKey: Guid(d46a97b13ab873844a1857953d58f003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Dialogue Test.unity using Guid(d46a97b13ab873844a1857953d58f003) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd732a3b65f01005b9d46783404f9b57e') in 0.0052355 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Art/Jenna's Assets/Textures/Window Textures/glass1_Normal_Raw.png
-  artifactKey: Guid(d7538e99fb364654fad7cdd1813ad63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Jenna's Assets/Textures/Window Textures/glass1_Normal_Raw.png using Guid(d7538e99fb364654fad7cdd1813ad63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f9b8a270a2bc4ac8ee735b00b8654eee') in 0.0126224 seconds
+  Time since last request: 1065.164739 seconds.
+  path: Assets/Art/Jenna's Assets/Main Character/MC Prefab.prefab
+  artifactKey: Guid(53062aa071606194ba8827324105a0bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Jenna's Assets/Main Character/MC Prefab.prefab using Guid(53062aa071606194ba8827324105a0bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0e0ff782b099a3b5952ef2b895b7175d') in 0.6942626 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 266
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.436349 seconds.
+  path: Assets/Art/Jenna's Assets/Main Character/AI.controller
+  artifactKey: Guid(09a3f4df9bc30dc40b5286ccf44485d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Jenna's Assets/Main Character/AI.controller using Guid(09a3f4df9bc30dc40b5286ccf44485d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '22b435a025412eb3dfe686c13919cbbe') in 0.0057018 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.121886 seconds.
+  path: Assets/Art/Jenna's Assets/Main Character/MC_Textures
+  artifactKey: Guid(7b155f644f5dbcd4e8ee05f867cbf76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Jenna's Assets/Main Character/MC_Textures using Guid(7b155f644f5dbcd4e8ee05f867cbf76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c9cc0a71849c9f910efa1572273594b') in 0.0005651 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.288263 seconds.
+  path: Assets/Art/Jenna's Assets/Main Character/MC_Textures/MomentaryMC_body2_BaseMap_sRGB.png
+  artifactKey: Guid(a96af8afb8f5c494aa4878c014d54374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Jenna's Assets/Main Character/MC_Textures/MomentaryMC_body2_BaseMap_sRGB.png using Guid(a96af8afb8f5c494aa4878c014d54374) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6d81008ea6ac3a39695d8963ea499cdc') in 0.0326745 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 74.654661 seconds.
-  path: Assets/Art/Bernards Assets/Textures/Heavy Door/Frame.mat
-  artifactKey: Guid(0b807ba2367ce0d4bb6af545e5974b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Bernards Assets/Textures/Heavy Door/Frame.mat using Guid(0b807ba2367ce0d4bb6af545e5974b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '90ffa15a088639ed6c8c4b7c031a030f') in 0.5408236 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+  Time since last request: 0.000077 seconds.
+  path: Assets/Art/Jenna's Assets/Main Character/MC_Textures/MomentaryMC_pants1_MaskMap_Raw.png
+  artifactKey: Guid(92494050042df054cb0abdc45ce82d56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Jenna's Assets/Main Character/MC_Textures/MomentaryMC_pants1_MaskMap_Raw.png using Guid(92494050042df054cb0abdc45ce82d56) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4ba95b28cf70af12b98f88242e5bf483') in 0.0163964 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.319949 seconds.
-  path: Assets/Art/Hunter's Assets/Glass/Flask1/glassmat.mat
-  artifactKey: Guid(86e23c946112d324cb0c03e9a7a9f587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Hunter's Assets/Glass/Flask1/glassmat.mat using Guid(86e23c946112d324cb0c03e9a7a9f587) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bf06b7c02685600bd218b5a4b1491a19') in 0.0149353 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.000027 seconds.
+  path: Assets/Art/Jenna's Assets/Main Character/MC_Textures/MomentaryMC_coat3_Normal_Raw.png
+  artifactKey: Guid(bf0b61bd742b8a347bab5016c9373ae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Jenna's Assets/Main Character/MC_Textures/MomentaryMC_coat3_Normal_Raw.png using Guid(bf0b61bd742b8a347bab5016c9373ae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '94bf630e05acdf16082882718df9de15') in 0.0240076 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Art/Materials/Placeholder Glass.mat
-  artifactKey: Guid(22e3bd57b83a14640a2a1d03447c6d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Materials/Placeholder Glass.mat using Guid(22e3bd57b83a14640a2a1d03447c6d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '40e0e5f842c6dc209d1bfe680a6fffb6') in 0.0131765 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.000037 seconds.
+  path: Assets/Art/Jenna's Assets/Main Character/MC_Textures/MomentaryMC_shoes1_BaseMap_sRGB.png
+  artifactKey: Guid(41ff44db1acd9db479d9338fd64cfac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Jenna's Assets/Main Character/MC_Textures/MomentaryMC_shoes1_BaseMap_sRGB.png using Guid(41ff44db1acd9db479d9338fd64cfac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bdc908d5a22b66762842f7ee9fcd42dd') in 0.0144603 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Art/Jenna's Assets/Main Character/MC_Textures/MomentaryMC_coat3_MaskMap_Raw.png
+  artifactKey: Guid(2597b5bd7ee94ee4c86e0ddc5bb32ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Jenna's Assets/Main Character/MC_Textures/MomentaryMC_coat3_MaskMap_Raw.png using Guid(2597b5bd7ee94ee4c86e0ddc5bb32ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '45722d73b7906783420394fcc341728b') in 0.0146807 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/Art/Jenna's Assets/Main Character/MC_Textures/MomentaryMC_hair1_BaseMap_sRGB.png
+  artifactKey: Guid(c35a198393d06e44c8d8d7a30e87f69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Jenna's Assets/Main Character/MC_Textures/MomentaryMC_hair1_BaseMap_sRGB.png using Guid(c35a198393d06e44c8d8d7a30e87f69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '61b184db0f1eb4153fb5c260a7901b65') in 0.0159278 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Art/Jenna's Assets/Main Character/MC_Textures/MomentaryMC_pants1_Normal_Raw.png
+  artifactKey: Guid(b8b3e807645f02542bb77588652e5852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Jenna's Assets/Main Character/MC_Textures/MomentaryMC_pants1_Normal_Raw.png using Guid(b8b3e807645f02542bb77588652e5852) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '072719d83497948c2dd7ed614a94fca5') in 0.0200085 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Art/Jenna's Assets/Main Character/MC_Textures/MomentaryMC_glasses1_BaseMap_sRGB.png
+  artifactKey: Guid(eaddf112e7347224e9967e1e126c0148) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Jenna's Assets/Main Character/MC_Textures/MomentaryMC_glasses1_BaseMap_sRGB.png using Guid(eaddf112e7347224e9967e1e126c0148) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd56f3e1109d1840c15c7f217a2c6f963') in 0.0161976 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Art/Jenna's Assets/Main Character/MC_Textures/MomentaryMC_coat3_BaseMap_sRGB.png
+  artifactKey: Guid(6ecaf52bc2e31bc46b1a12fae64af42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Jenna's Assets/Main Character/MC_Textures/MomentaryMC_coat3_BaseMap_sRGB.png using Guid(6ecaf52bc2e31bc46b1a12fae64af42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5d9d309c387c6c470297daaf555dfb2f') in 0.0141591 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.837966 seconds.
+  path: Assets/Art/Jenna's Assets/Main Character/Animations/Idle.fbx
+  artifactKey: Guid(b2d9b4b4e86efba498b281ee547cae60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Jenna's Assets/Main Character/Animations/Idle.fbx using Guid(b2d9b4b4e86efba498b281ee547cae60) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3ff10729d3b1ffde407171483a2cbe74') in 0.35706 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 105
 
