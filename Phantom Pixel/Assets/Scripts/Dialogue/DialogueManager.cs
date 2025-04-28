@@ -9,6 +9,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI speakertext;
     public TextMeshProUGUI dialoguetext;
     public Dialogue LevelDialogue;
+    public Dialogue EndLevelDialogue;
     public float textTimer = 2.0f;
     public GameObject dialogueUI;
     
@@ -23,13 +24,14 @@ public class DialogueManager : MonoBehaviour
     {
         sentences = new Queue<string>();
         TimeManager.PauseTime();
-        dialogueUI.SetActive(true);
+       // dialogueUI.SetActive(true);
         StartCoroutine(Dialogue(LevelDialogue));
 
     }
     
     public IEnumerator Dialogue(Dialogue dialogue)
     {
+        dialogueUI.SetActive(true);
         speakertext.text = dialogue.speaker;
         sentences.Clear();
         foreach (var sentence in dialogue.sentences)
@@ -43,9 +45,11 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(textTimer);
         }
         
+        dialogueUI.SetActive(false);
+        
     }
     
-
+/*
     public void StartDialogue(Dialogue dialogue)
     {
         Debug.Log("Starting Message with " + dialogue.speaker);
@@ -61,6 +65,24 @@ public class DialogueManager : MonoBehaviour
 
         DisplayNextSentence();
     }
+    
+    public void EndDialogue(Dialogue dialogue)
+    {
+        Debug.Log("Level Complete " + dialogue.speaker);
+
+        speakertext.text = dialogue.speaker;
+        
+        sentences.Clear();
+
+        foreach (var sentence in dialogue.sentences)
+        {
+            sentences.Enqueue(sentence);
+        }
+
+        DisplayNextSentence();
+    }
+    
+*/
 
     //This has to be auto continue
     // this is probably best handled through a co-routine 
@@ -83,6 +105,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
+        dialogueUI.SetActive(false);
         TimeManager.ResumeTime();
         Debug.Log("End of Conversation");
     }

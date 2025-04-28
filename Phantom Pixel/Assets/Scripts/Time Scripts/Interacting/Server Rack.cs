@@ -8,14 +8,18 @@ public class ServerRack : ButtonConsole
     private static int serversToDestroyToWin = 4;
     private static int serversDestroyed = 0;
 
+    [SerializeField] private DialogueManager dialogueManager;
+
     public override void Interact()
     {
         serversDestroyed++;
         if(serversDestroyed >= serversToDestroyToWin)
         {
             Debug.Log("You Win!");
+            //Make sure this shit doesn't run 4 times
+            StartCoroutine(dialogueManager.Dialogue(dialogueManager.EndLevelDialogue));
             LevelManager.completeLevel(3);
-            SceneManager.LoadScene(0);
+            //SceneManager.LoadScene(0);
         }
         else
         {

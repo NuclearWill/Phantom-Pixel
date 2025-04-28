@@ -1,16 +1,20 @@
+using System;
 using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using UnityEngine.SceneManagement;
 
 public static class LevelManager
 {
     private static bool[] levelCompleted = { false, false, false };
-
+    
 
     public static void completeLevel(int level)
     {
         levelCompleted[level - 1] = true;
         SaveLevel();
+        SceneManager.LoadScene("Hub");
+        //move the scene loader to here 
     }
 
     public static void LoseLevel()

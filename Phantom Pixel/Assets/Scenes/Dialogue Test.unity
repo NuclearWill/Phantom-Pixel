@@ -678,7 +678,7 @@ GameObject:
   - component: {fileID: 1456673093}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: Dialogue Controller
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -703,6 +703,9 @@ MonoBehaviour:
     - 'This line should show after 2 seconds '
     - This line should be for the las dialogue scene
     speaker: AI
+  EndLevelDialogue:
+    sentences: []
+    speaker: 
   textTimer: 2
   dialogueUI: {fileID: 196292093}
 --- !u!4 &1456673094
