@@ -1,16 +1,20 @@
+using System;
 using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using UnityEngine.SceneManagement;
 
 public static class LevelManager
 {
     private static bool[] levelCompleted = { false, false, false };
-
+    
 
     public static void completeLevel(int level)
     {
         levelCompleted[level - 1] = true;
         SaveLevel();
+        SceneManager.LoadScene("Hub");
+        //move the scene loader to here 
     }
 
     public static void LoseLevel()
@@ -33,7 +37,7 @@ public static class LevelManager
 
     }
 
-    public static void LoadLevel()
+    public static void LoadLevelData()
     {
         string path = Application.persistentDataPath + "/Momentary.SaveData";
         if (File.Exists(path))
@@ -48,6 +52,32 @@ public static class LevelManager
         else
         {
             Debug.LogError("Save file not found in " + path);
+        }
+    }
+
+    public static int currentLevel()
+    {
+        for (int i = 0; i < levelCompleted.Length; i++)
+        {
+            if (!levelCompleted[i])
+            {
+                return i + 1;
+            }
+        }
+
+        return 1;
+    }
+
+    public static void ResetSave()
+    {
+        string path = Application.persistentDataPath + "/Momentary.SaveData";
+        if (File.Exists(path))
+        {
+            File.Delete(path);
+            
+        } else
+        {
+            Debug.LogError("No save data found to erase " + path);
         }
     }
 }
