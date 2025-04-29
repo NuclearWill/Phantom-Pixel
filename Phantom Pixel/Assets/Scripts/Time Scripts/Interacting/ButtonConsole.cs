@@ -11,13 +11,11 @@ public class ButtonConsole : TimeBody, IInteractable
     [Tooltip("The delay each object should wait before activating after the button is pressed")]
     private float[] triggerDelay;
 
-    [NonSerialized]
-    private bool[] objectTriggered;
+    public bool[] objectTriggered;
 
-    [NonSerialized]
-    public bool activated = false;
-    [NonSerialized]
-    private float timeActivated;
+    public bool activated { private set; get; } = false;
+
+    public float timeActivated { private set; get; }
 
     private void Start()
     {

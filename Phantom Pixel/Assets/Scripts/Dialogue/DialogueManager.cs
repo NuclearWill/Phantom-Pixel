@@ -92,7 +92,7 @@ public class DialogueManager : MonoBehaviour
     // then pause the timer until sentences is empty 
 
     // outputs the sentence to the dialogue box
-    public void DisplayNextSentence()
+    private void DisplayNextSentence()
     {
         string sentence = sentences.Dequeue();
         dialoguetext.text = sentence;
